@@ -1,41 +1,47 @@
 {
-    "lastUpdated": "20200730",
+    "lastUpdated": "20200731",
     "standings": [
         {
-            "name": "James_Cameron",
-            "points": 66,
-            "20200730_points": 66,
-            "standing": 1
-        },
-        {
             "name": "James_Tyler",
-            "points": 54,
+            "points": 156,
             "20200730_points": 54,
-            "standing": 2
+            "standing": 1,
+            "20200731_points": 102
         },
         {
             "name": "James_Darcy",
-            "points": 28,
+            "points": 139,
             "20200730_points": 28,
-            "standing": 3
+            "standing": 2,
+            "20200731_points": 111
         },
         {
             "name": "James_Kevin",
-            "points": 23,
+            "points": 136,
             "20200730_points": 23,
-            "standing": 4
-        },
-        {
-            "name": "James_Shane",
-            "points": 20,
-            "20200730_points": 20,
-            "standing": 5
+            "standing": 3,
+            "20200731_points": 113
         },
         {
             "name": "James_Bill",
-            "points": 13,
+            "points": 113,
             "20200730_points": 13,
-            "standing": 6
+            "standing": 4,
+            "20200731_points": 100
+        },
+        {
+            "name": "James_Cameron",
+            "points": 105,
+            "20200730_points": 66,
+            "standing": 5,
+            "20200731_points": 39
+        },
+        {
+            "name": "James_Shane",
+            "points": 86,
+            "20200730_points": 20,
+            "standing": 6,
+            "20200731_points": 66
         }
     ]
 }

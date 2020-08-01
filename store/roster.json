@@ -92,6 +92,18 @@
                     "lastName": "Porzingis",
                     "temporaryDisplayName": "Porzingis, Kristaps",
                     "personId": "204001"
+                },
+                {
+                    "firstName": "Danilo",
+                    "lastName": "Gallinari",
+                    "temporaryDisplayName": "Gallinari, Danilo",
+                    "personId": "201568"
+                },
+                {
+                    "firstName": "Dennis",
+                    "lastName": "Schroder",
+                    "temporaryDisplayName": "Schroder, Dennis",
+                    "personId": "203471"
                 }
             ]
         },
@@ -139,6 +151,12 @@
                     "lastName": "Hield",
                     "temporaryDisplayName": "Hield, Buddy",
                     "personId": "1627741"
+                },
+                {
+                    "firstName": "Deandre",
+                    "lastName": "Ayton",
+                    "temporaryDisplayName": "Ayton, Deandre",
+                    "personId": "1629028"
                 }
             ]
         },
@@ -186,6 +204,12 @@
                     "lastName": "Conley",
                     "temporaryDisplayName": "Conley, Mike",
                     "personId": "201144"
+                },
+                {
+                    "firstName": "Lou",
+                    "lastName": "Williams",
+                    "temporaryDisplayName": "Williams, Lou",
+                    "personId": "101150"
                 }
             ]
         },
@@ -233,6 +257,12 @@
                     "lastName": "Robinson",
                     "temporaryDisplayName": "Robinson, Duncan",
                     "personId": "1629130"
+                },
+                {
+                    "firstName": "Gordon",
+                    "lastName": "Hayward",
+                    "temporaryDisplayName": "Hayward, Gordon",
+                    "personId": "202330"
                 }
             ]
         },
@@ -280,6 +310,12 @@
                     "lastName": "Adebayo",
                     "temporaryDisplayName": "Adebayo, Bam",
                     "personId": "1628389"
+                },
+                {
+                    "firstName": "Fred",
+                    "lastName": "VanVleet",
+                    "temporaryDisplayName": "VanVleet, Fred",
+                    "personId": "1627832"
                 }
             ]
         }

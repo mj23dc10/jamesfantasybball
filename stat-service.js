@@ -1,15 +1,11 @@
 const axios = require("axios");
+const fs = require('fs');
+const moment = require('moment');
 const nbaDataUrlPrefix = "http://data.nba.net/10s/prod/v1/";
 const scoreboard = "/scoreboard.json"
-
-const boxscore = "http://data.nba.net/10s/prod/v1/20200730/0021901231_boxscore.json"
 const boxscoreSuffix = "_boxscore.json"
 
-const playerMap = new Map([
-    ['darcy', ['Westbrook, Russell', 'Leonard, Kawhi', 'Walker, Kemba', 'Middleton, Khris', 'Brown, Jaylen', 'Harris, Tobias', 'Warren, T.J.', 'Fournier, Evan']]
-]);
-
-const getGameIdsByDate = async date => {
+const getGameIdsByDate = async (date) => {
     let gameIds = [];
     try {
         const response = await axios.get(nbaDataUrlPrefix + date + scoreboard);
@@ -19,9 +15,8 @@ const getGameIdsByDate = async date => {
             gameIds.push(data.games[i].gameId);
         }
         console.log(gameIds);
-        // console.log(data);
     } catch (error) {
-        console.log(error);
+        console.error(error);
     }
     return gameIds;
 };
@@ -40,38 +35,126 @@ const getPlayerIdByName = async (name) => {
             }
         }
     } catch (error) {
-        console.log(error);
-    }
-};
-
-const getPlayerIdsByPerson = (personName) => {
-    for (let [person, players] of playerMap.entries()) {
-        if (person == personName) {
-            for (let player of players) {
-                getPlayerIdByName(player);
-            }
-        }
+        console.error(error);
     }
 };
 
 const getPlayerPointsByDateAndPlayerId = async (date, id) => {
     let gameIds = await getGameIdsByDate(date);
-    for(let gameId of gameIds) {
+    for (let gameId of gameIds) {
         try {
-            const response = await axios.get(nbaDataUrlPrefix + date + "/" + gameId+boxscoreSuffix);
+            const response = await axios.get(nbaDataUrlPrefix + date + "/" + gameId + boxscoreSuffix);
             const boxscoreData = response.data;
             const playStatArray = boxscoreData.stats.activePlayers;
-            for(let playerStats of playStatArray) {
-                if(playerStats.personId == id) {
-                    console.log("Points:"+playerStats.points);
+            for (let playerStats of playStatArray) {
+                if (playerStats.personId == id) {
+                    return playerStats.points;
                 }
             }
         } catch (error) {
-            console.log(error);
+            console.error(error);
         }
     }
 };
+const getPlayerStatsByDate = async (date) => {
+    let gameIds = await getGameIdsByDate(date);
+    let playStatArray = [];
+    for (let gameId of gameIds) {
+        try {
+            const response = await axios.get(nbaDataUrlPrefix + date + "/" + gameId + boxscoreSuffix);
+            const boxscoreData = response.data;
+            playStatArray.push(boxscoreData.stats.activePlayers);
 
-getPlayerPointsByDateAndPlayerId("20200730","202695");
-// getPlayerIdsByPerson('darcy');
-// getGameIdsByDate("20200730");
+        } catch (error) {
+            console.error(error);
+        }
+    }
+    return playStatArray;
+};
+const getPointsFromPlayerStats = (stats, id) => {
+    try {
+        for (let game of stats) {
+            for (let gameStats of game) {
+                if (gameStats.personId == id) {
+                    return parseInt(gameStats.points, 10);
+                }
+            }
+        }
+        return 0;
+    } catch (error) {
+        console.error(error);
+    }
+};
+const getCurrentStandingsByDate = async (date) => {
+    let jamesLeague = JSON.parse(fs.readFileSync('store/roster.json', 'utf8'));
+    let currentStandings = JSON.parse(fs.readFileSync('store/standings.json', 'utf8'));
+    //Check do we have standings up to this date
+    const searchDate = moment(date, 'YYYYMMDD')
+    const lastUpdate = moment(currentStandings.lastUpdated, 'YYYYMMDD')
+    if (searchDate.isAfter(lastUpdate)) {
+        let playerStats = await getPlayerStatsByDate(date);
+        //If we have sats for that day use them
+        if (playerStats.length > 0) {
+            let teams = jamesLeague.teams;
+            teams.forEach(team => {
+                let teamStanding = currentStandings.standings.find(o => o.name === team.name);
+                var totalTeamPoints = 0;
+                team.roster.forEach(async player => {
+                    let point = getPointsFromPlayerStats(playerStats, player.personId);
+                    //console.log("Player " + player.firstName + " Points: " + point);
+                    totalTeamPoints += getPointsFromPlayerStats(playerStats, player.personId);
+                });
+                if (teamStanding) {
+                    teamStanding.points += totalTeamPoints;
+                    teamStanding[date + "_points"] = totalTeamPoints
+                } else {
+                    currentStandings.standings.push({
+                        "name": team.name,
+                        "points": totalTeamPoints,
+                        [date + "_points"]: totalTeamPoints
+                    })
+                }
+            });
+            //Sort the current standings
+            let sortedStandings = currentStandings.standings.sort(function (a, b) {
+                return b.points - a.points;
+            });
+            //Get the sorted index and set the standings paramented to that index 
+            sortedStandings.forEach(team => {
+                let obj = currentStandings.standings.find((o, i) => {
+                    if (o.name === team.name) {
+                        currentStandings.standings[i].standing = i + 1;
+                        return true; // stop searching
+                    }
+                });
+            });
+            //Set the last update to the current date
+            currentStandings.lastUpdated = date;
+            console.log(currentStandings.standings)
+            //Write the updates standings to disk and save
+            try {
+                fs.writeFileSync("store/standings.json", JSON.stringify(currentStandings, null, 4))
+            } catch (err) {
+                console.error(err)
+            }
+            
+        }
+    } else {
+        console.warn("Already have stats for the date: " + date);
+    }
+};
+
+// Call start
+//(async () => {
+//  console.log('before start');
+// await getCurrentStandingsByDate("20200730");
+// await getCurrentStandingsByDate("20200731");
+//console.log('after start');
+//})();
+
+module.exports = {
+    getCurrentStandingsByDate,
+    getGameIdsByDate,
+    getPlayerPointsByDateAndPlayerId,
+    getPlayerIdByName
+}

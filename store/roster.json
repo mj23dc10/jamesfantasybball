@@ -1,0 +1,323 @@
+{
+    "lastUpdateDate": "20200730",
+    "teams": [
+        {
+            "name": "James_Darcy",
+            "roster": [
+                {
+                    "firstName": "Russell",
+                    "lastName": "Westbrook",
+                    "temporaryDisplayName": "Westbrook, Russell",
+                    "personId": "201566"
+                },
+                {
+                    "firstName": "Kawhi",
+                    "lastName": "Leonard",
+                    "temporaryDisplayName": "Leonard, Kawhi",
+                    "personId": "202695"
+                },
+                {
+                    "firstName": "Kemba",
+                    "lastName": "Walker",
+                    "temporaryDisplayName": "Walker, Kemba",
+                    "personId": "202689"
+                },
+                {
+                    "firstName": "Khris",
+                    "lastName": "Middleton",
+                    "temporaryDisplayName": "Middleton, Khris",
+                    "personId": "203114"
+                },
+                {
+                    "firstName": "Jaylen",
+                    "lastName": "Brown",
+                    "temporaryDisplayName": "Brown, Jaylen",
+                    "personId": "1627759"
+                },
+                {
+                    "firstName": "Tobias",
+                    "lastName": "Harris",
+                    "temporaryDisplayName": "Harris, Tobias",
+                    "personId": "202699"
+                },
+                {
+                    "firstName": "T.J.",
+                    "lastName": "Warren",
+                    "temporaryDisplayName": "Warren, T.J.",
+                    "personId": "203933"
+                },
+                {
+                    "firstName": "Evan",
+                    "lastName": "Fournier",
+                    "temporaryDisplayName": "Fournier, Evan",
+                    "personId": "203095"
+                }
+            ]
+        },
+        {
+            "name": "James_Bill",
+            "roster": [
+                {
+                    "firstName": "Luka",
+                    "lastName": "Doncic",
+                    "temporaryDisplayName": "Doncic, Luka",
+                    "personId": "1629029"
+                },
+                {
+                    "firstName": "CJ",
+                    "lastName": "McCollum",
+                    "temporaryDisplayName": "McCollum, CJ",
+                    "personId": "203468"
+                },
+                {
+                    "firstName": "Joel",
+                    "lastName": "Embiid",
+                    "temporaryDisplayName": "Embiid, Joel",
+                    "personId": "203954"
+                },
+                {
+                    "firstName": "Zion",
+                    "lastName": "Williamson",
+                    "temporaryDisplayName": "Williamson, Zion",
+                    "personId": "1629627"
+                },
+                {
+                    "firstName": "Kyle",
+                    "lastName": "Lowry",
+                    "temporaryDisplayName": "Lowry, Kyle",
+                    "personId": "200768"
+                },
+                {
+                    "firstName": "Kristaps",
+                    "lastName": "Porzingis",
+                    "temporaryDisplayName": "Porzingis, Kristaps",
+                    "personId": "204001"
+                },
+                {
+                    "firstName": "Danilo",
+                    "lastName": "Gallinari",
+                    "temporaryDisplayName": "Gallinari, Danilo",
+                    "personId": "201568"
+                },
+                {
+                    "firstName": "Dennis",
+                    "lastName": "Schroder",
+                    "temporaryDisplayName": "Schroder, Dennis",
+                    "personId": "203471"
+                }
+            ]
+        },
+        {
+            "name": "James_Kevin",
+            "roster": [
+                {
+                    "firstName": "Damian",
+                    "lastName": "Lillard",
+                    "temporaryDisplayName": "Lillard, Damian",
+                    "personId": "203081"
+                },
+                {
+                    "firstName": "Jayson",
+                    "lastName": "Tatum",
+                    "temporaryDisplayName": "Tatum, Jayson",
+                    "personId": "1628369"
+                },
+                {
+                    "firstName": "DeMar",
+                    "lastName": "DeRozan",
+                    "temporaryDisplayName": "DeRozan, DeMar",
+                    "personId": "201942"
+                },
+                {
+                    "firstName": "Brandon",
+                    "lastName": "Ingram",
+                    "temporaryDisplayName": "Ingram, Brandon",
+                    "personId": "1627742"
+                },
+                {
+                    "firstName": "Nikola",
+                    "lastName": "Vucevic",
+                    "temporaryDisplayName": "Vucevic, Nikola",
+                    "personId": "202696"
+                },
+                {
+                    "firstName": "Shai",
+                    "lastName": "Gilgeous-Alexander",
+                    "temporaryDisplayName": "Gilgeous-Alexander, Shai",
+                    "personId": "1628983"
+                },
+                {
+                    "firstName": "Buddy",
+                    "lastName": "Hield",
+                    "temporaryDisplayName": "Hield, Buddy",
+                    "personId": "1627741"
+                },
+                {
+                    "firstName": "Deandre",
+                    "lastName": "Ayton",
+                    "temporaryDisplayName": "Ayton, Deandre",
+                    "personId": "1629028"
+                }
+            ]
+        },
+        {
+            "name": "James_Tyler",
+            "roster": [
+                {
+                    "firstName": "Giannis",
+                    "lastName": "Antetokounmpo",
+                    "temporaryDisplayName": "Antetokounmpo, Giannis",
+                    "personId": "203507"
+                },
+                {
+                    "firstName": "Anthony",
+                    "lastName": "Davis",
+                    "temporaryDisplayName": "Davis, Anthony",
+                    "personId": "203076"
+                },
+                {
+                    "firstName": "Devin",
+                    "lastName": "Booker",
+                    "temporaryDisplayName": "Booker, Devin",
+                    "personId": "1626164"
+                },
+                {
+                    "firstName": "Jimmy",
+                    "lastName": "Butler",
+                    "temporaryDisplayName": "Butler, Jimmy",
+                    "personId": "202710"
+                },
+                {
+                    "firstName": "De'Aaron",
+                    "lastName": "Fox",
+                    "temporaryDisplayName": "Fox, De'Aaron",
+                    "personId": "1628368"
+                },
+                {
+                    "firstName": "Chris",
+                    "lastName": "Paul",
+                    "temporaryDisplayName": "Paul, Chris",
+                    "personId": "101108"
+                },
+                {
+                    "firstName": "Mike",
+                    "lastName": "Conley",
+                    "temporaryDisplayName": "Conley, Mike",
+                    "personId": "201144"
+                },
+                {
+                    "firstName": "Lou",
+                    "lastName": "Williams",
+                    "temporaryDisplayName": "Williams, Lou",
+                    "personId": "101150"
+                }
+            ]
+        },
+        {
+            "name": "James_Cameron",
+            "roster": [
+                {
+                    "firstName": "LeBron",
+                    "lastName": "James",
+                    "temporaryDisplayName": "James, LeBron",
+                    "personId": "2544"
+                },
+                {
+                    "firstName": "Pascal",
+                    "lastName": "Siakam",
+                    "temporaryDisplayName": "Siakam, Pascal",
+                    "personId": "1627783"
+                },
+                {
+                    "firstName": "Paul",
+                    "lastName": "George",
+                    "temporaryDisplayName": "George, Paul",
+                    "personId": "202331"
+                },
+                {
+                    "firstName": "Jamal",
+                    "lastName": "Murray",
+                    "temporaryDisplayName": "Murray, Jamal",
+                    "personId": "1627750"
+                },
+                {
+                    "firstName": "Ja",
+                    "lastName": "Morant",
+                    "temporaryDisplayName": "Morant, Ja",
+                    "personId": "1629630"
+                },
+                {
+                    "firstName": "Jrue",
+                    "lastName": "Holiday",
+                    "temporaryDisplayName": "Holiday, Jrue",
+                    "personId": "201950"
+                },
+                {
+                    "firstName": "Duncan",
+                    "lastName": "Robinson",
+                    "temporaryDisplayName": "Robinson, Duncan",
+                    "personId": "1629130"
+                },
+                {
+                    "firstName": "Gordon",
+                    "lastName": "Hayward",
+                    "temporaryDisplayName": "Hayward, Gordon",
+                    "personId": "202330"
+                }
+            ]
+        },
+        {
+            "name": "James_Shane",
+            "roster": [
+                {
+                    "firstName": "James",
+                    "lastName": "Harden",
+                    "temporaryDisplayName": "Harden, James",
+                    "personId": "201935"
+                },
+                {
+                    "firstName": "Nikola",
+                    "lastName": "Jokic",
+                    "temporaryDisplayName": "Jokic, Nikola",
+                    "personId": "203999"
+                },
+                {
+                    "firstName": "Donovan",
+                    "lastName": "Mitchell",
+                    "temporaryDisplayName": "Mitchell, Donovan",
+                    "personId": "1628378"
+                },
+                {
+                    "firstName": "Ben",
+                    "lastName": "Simmons",
+                    "temporaryDisplayName": "Simmons, Ben",
+                    "personId": "1627732"
+                },
+                {
+                    "firstName": "Caris",
+                    "lastName": "LeVert",
+                    "temporaryDisplayName": "LeVert, Caris",
+                    "personId": "1627747"
+                },
+                {
+                    "firstName": "Malcolm",
+                    "lastName": "Brogdon",
+                    "temporaryDisplayName": "Brogdon, Malcolm",
+                    "personId": "1627763"
+                },
+                {
+                    "firstName": "Bam",
+                    "lastName": "Adebayo",
+                    "temporaryDisplayName": "Adebayo, Bam",
+                    "personId": "1628389"
+                },
+                {
+                    "firstName": "Fred",
+                    "lastName": "VanVleet",
+                    "temporaryDisplayName": "VanVleet, Fred",
+                    "personId": "1627832"
+                }
+            ]
+        }
+    ]
+}

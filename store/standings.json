@@ -1,0 +1,41 @@
+{
+    "lastUpdated": "20200730",
+    "standings": [
+        {
+            "name": "James_Cameron",
+            "points": 66,
+            "20200730_points": 66,
+            "standing": 1
+        },
+        {
+            "name": "James_Tyler",
+            "points": 54,
+            "20200730_points": 54,
+            "standing": 2
+        },
+        {
+            "name": "James_Darcy",
+            "points": 28,
+            "20200730_points": 28,
+            "standing": 3
+        },
+        {
+            "name": "James_Kevin",
+            "points": 23,
+            "20200730_points": 23,
+            "standing": 4
+        },
+        {
+            "name": "James_Shane",
+            "points": 20,
+            "20200730_points": 20,
+            "standing": 5
+        },
+        {
+            "name": "James_Bill",
+            "points": 13,
+            "20200730_points": 13,
+            "standing": 6
+        }
+    ]
+}

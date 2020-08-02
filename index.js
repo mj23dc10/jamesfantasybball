@@ -3,6 +3,10 @@ const express = require("express");
 const moment = require('moment');
 const stat_service = require("./stat-service");
 const seasonStartDate = 20200730
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 app = express();
 //Run as 12 GMT which will be 08:00 ETC all games should be done and reported sure it 
 cron.schedule('0 12 * * *', async () => {

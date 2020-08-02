@@ -1,6 +1,7 @@
 const axios = require("axios");
 const fs = require('fs');
 const moment = require('moment');
+const twitter = require('./twitter-service');
 const nbaDataUrlPrefix = "http://data.nba.net/10s/prod/v1/";
 const scoreboard = "/scoreboard.json"
 const boxscoreSuffix = "_boxscore.json"
@@ -133,7 +134,12 @@ const getCurrentStandingsByDate = async (date) => {
             console.log(currentStandings.standings)
             //Write the updates standings to disk and save
             try {
-                fs.writeFileSync("store/standings.json", JSON.stringify(currentStandings, null, 4))
+                fs.writeFileSync("store/standings.json", JSON.stringify(currentStandings, null, 4));
+                let tweetContent = "James Fantasy BBall Standings: \n";
+                for(entry of currentStandings.standings){
+                    tweetContent+=entry.standing+" "+entry.name+" Points: "+entry.points+ "\n";
+                }
+                twitter.tweetScores(tweetContent);
             } catch (err) {
                 console.error(err)
             }

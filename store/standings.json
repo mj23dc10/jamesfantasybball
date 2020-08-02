@@ -1,47 +1,53 @@
 {
-    "lastUpdated": "20200731",
+    "lastUpdated": "20200801",
     "standings": [
         {
-            "name": "James_Tyler",
-            "points": 156,
-            "20200730_points": 54,
-            "standing": 1,
-            "20200731_points": 102
-        },
-        {
             "name": "James_Darcy",
-            "points": 139,
+            "points": 460,
             "20200730_points": 28,
-            "standing": 2,
-            "20200731_points": 111
-        },
-        {
-            "name": "James_Kevin",
-            "points": 136,
-            "20200730_points": 23,
-            "standing": 3,
-            "20200731_points": 113
+            "standing": 1,
+            "20200731_points": 111,
+            "20200801_points": 107
         },
         {
             "name": "James_Bill",
-            "points": 113,
+            "points": 420,
             "20200730_points": 13,
-            "standing": 4,
-            "20200731_points": 100
+            "standing": 2,
+            "20200731_points": 100,
+            "20200801_points": 109
+        },
+        {
+            "name": "James_Tyler",
+            "points": 348,
+            "20200730_points": 54,
+            "standing": 3,
+            "20200731_points": 102,
+            "20200801_points": 66
         },
         {
             "name": "James_Cameron",
-            "points": 105,
+            "points": 345,
             "20200730_points": 66,
-            "standing": 5,
-            "20200731_points": 39
+            "standing": 4,
+            "20200731_points": 39,
+            "20200801_points": 84
         },
         {
             "name": "James_Shane",
-            "points": 86,
+            "points": 334,
             "20200730_points": 20,
+            "standing": 5,
+            "20200731_points": 66,
+            "20200801_points": 86
+        },
+        {
+            "name": "James_Kevin",
+            "points": 235,
+            "20200730_points": 23,
             "standing": 6,
-            "20200731_points": 66
+            "20200731_points": 113,
+            "20200801_points": 33
         }
     ]
 }

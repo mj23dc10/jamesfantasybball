@@ -5,6 +5,7 @@ const twitter = require('./twitter-service');
 const nbaDataUrlPrefix = "http://data.nba.net/10s/prod/v1/";
 const scoreboard = "/scoreboard.json"
 const boxscoreSuffix = "_boxscore.json"
+const MAX_GAMES = 64;
 
 const getGameIdsByDate = async (date) => {
     let gameIds = [];
@@ -58,34 +59,22 @@ const getPlayerPointsByDateAndPlayerId = async (date, id) => {
     }
 };
 const getPlayerStatsByDate = async (date) => {
+    const playerMap = new Map();
     let gameIds = await getGameIdsByDate(date);
-    let playStatArray = [];
     for (let gameId of gameIds) {
         try {
             const response = await axios.get(nbaDataUrlPrefix + date + "/" + gameId + boxscoreSuffix);
             const boxscoreData = response.data;
-            playStatArray.push(boxscoreData.stats.activePlayers);
-
+            boxscoreData.stats.activePlayers.forEach(player => {
+                playerMap.set(player.personId, parseInt(player.points, 10))
+            });
         } catch (error) {
             console.error(error);
         }
     }
-    return playStatArray;
+    return playerMap;
 };
-const getPointsFromPlayerStats = (stats, id) => {
-    try {
-        for (let game of stats) {
-            for (let gameStats of game) {
-                if (gameStats.personId == id) {
-                    return parseInt(gameStats.points, 10);
-                }
-            }
-        }
-        return 0;
-    } catch (error) {
-        console.error(error);
-    }
-};
+
 const getCurrentStandingsByDate = async (date) => {
     let jamesLeague = JSON.parse(fs.readFileSync('store/roster.json', 'utf8'));
     let currentStandings = JSON.parse(fs.readFileSync('store/standings.json', 'utf8'));
@@ -95,23 +84,28 @@ const getCurrentStandingsByDate = async (date) => {
     if (searchDate.isAfter(lastUpdate)) {
         let playerStats = await getPlayerStatsByDate(date);
         //If we have sats for that day use them
-        if (playerStats.length > 0) {
+        if (playerStats.size > 0) {
             let teams = jamesLeague.teams;
             teams.forEach(team => {
                 let teamStanding = currentStandings.standings.find(o => o.name === team.name);
                 var totalTeamPoints = 0;
+                var gamesPlayed = 0;
                 team.roster.forEach(async player => {
-                    let point = getPointsFromPlayerStats(playerStats, player.personId);
-                    //console.log("Player " + player.firstName + " Points: " + point);
-                    totalTeamPoints += getPointsFromPlayerStats(playerStats, player.personId);
+                    let points = playerStats.get(player.personId);
+                    if (points){
+                        totalTeamPoints += points;
+                        gamesPlayed++;
+                    }
                 });
                 if (teamStanding) {
                     teamStanding.points += totalTeamPoints;
-                    teamStanding[date + "_points"] = totalTeamPoints
+                    teamStanding[date + "_points"] = totalTeamPoints;
+                    teamStanding.gamesLeft -= gamesPlayed;
                 } else {
                     currentStandings.standings.push({
                         "name": team.name,
                         "points": totalTeamPoints,
+                        "gamesLeft" : MAX_GAMES - gamesPlayed,
                         [date + "_points"]: totalTeamPoints
                     })
                 }
@@ -143,20 +137,11 @@ const getCurrentStandingsByDate = async (date) => {
             } catch (err) {
                 console.error(err)
             }
-            
         }
     } else {
         console.warn("Already have stats for the date: " + date);
     }
 };
-
-// Call start
-//(async () => {
-//  console.log('before start');
-// await getCurrentStandingsByDate("20200730");
-// await getCurrentStandingsByDate("20200731");
-//console.log('after start');
-//})();
 
 module.exports = {
     getCurrentStandingsByDate,

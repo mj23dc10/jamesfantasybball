@@ -1,0 +1,12 @@
+extends layout.pug
+include mixins/_playerThumbCard
+
+block content
+  section.jumbotron.text-center
+    .container
+        h1 #{team.name}
+  .album.py-5.bg-light
+    .container
+      .row
+        each player in team.roster
+          +playerThumbCard(player)

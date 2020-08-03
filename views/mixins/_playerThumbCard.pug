@@ -1,0 +1,13 @@
+mixin playerThumbCard(player)
+  .col-md-4
+    .card.mb-4.shadow-sm
+      svg.bd-placeholder-img.card-img-top&attributes({"width": "100%"}, {"height": "225"}, {"focusable": "false"}, {"role": "img"})
+        title #{player.firstName} #{player.lastName}
+        rect(width="100%" height="100%" fill="#55595c")
+        text(x="50%" y="50%" fill="#eceeef" dy=".3em") #{player.firstName} #{player.lastName}
+      .card-body
+        .card-text Team: #{player.teamName}
+        .card-text Jersey #: #{player.jersey}
+        .card-text Postion: #{player.pos}
+        .card-text Years Pro: #{player.yearsPro}
+        .card-text College: #{player.collegeName}

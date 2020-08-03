@@ -1,0 +1,12 @@
+extends layout.pug
+include mixins/_standingsThumbCard
+
+block content
+  section.jumbotron.text-center
+    .container
+        h1 Updated : #{standings.lastUpdated}
+  .album.py-5.bg-light
+    .container
+      .row
+        each standing in standings.standings
+          +standingsThumbCard(standing)

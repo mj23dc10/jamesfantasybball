@@ -143,6 +143,30 @@ const getCurrentStandingsByDate = async (date) => {
     }
 };
 
+const updateRosterInfo = async () => {
+    let jamesLeague = JSON.parse(fs.readFileSync('store/roster.json', 'utf8'));
+    let players = JSON.parse(fs.readFileSync('sample-data/players.json', 'utf8'));
+    let nbaTeams = JSON.parse(fs.readFileSync('sample-data/teams.json', 'utf8'));
+    jamesLeague.teams.forEach(team => {
+        team.roster.forEach(async player => {
+            let pData = players.league.standard.find(o => o.personId === player.personId);
+            if (pData) {
+                player['jersey'] = pData.jersey;
+                player['pos'] = pData.pos;
+                player['yearsPro'] = pData.yearsPro;
+                player['collegeName'] = pData.collegeName; 
+                let teamData = nbaTeams.league.standard.find(o => o.teamId === pData.teamId);
+                player['team'] = teamData.fullName; 
+            }
+        });
+    });
+    try {
+        fs.writeFileSync("store/roster.json", JSON.stringify(jamesLeague, null, 4));
+    } catch (err) {
+        console.error(err)
+    }
+};
+
 module.exports = {
     getCurrentStandingsByDate,
     getGameIdsByDate,

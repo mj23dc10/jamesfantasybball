@@ -8,49 +8,90 @@
                     "firstName": "Russell",
                     "lastName": "Westbrook",
                     "temporaryDisplayName": "Westbrook, Russell",
-                    "personId": "201566"
+                    "personId": "201566",
+                    "jersey": "0",
+                    "pos": "G",
+                    "yearsPro": "11",
+                    "collegeName": "UCLA",
+                    "team": "Houston Rockets"
                 },
                 {
                     "firstName": "Kawhi",
                     "lastName": "Leonard",
                     "temporaryDisplayName": "Leonard, Kawhi",
-                    "personId": "202695"
+                    "personId": "202695",
+                    "fullName": "LA Clippers",
+                    "jersey": "2",
+                    "pos": "F",
+                    "yearsPro": "8",
+                    "collegeName": "San Diego State",
+                    "team": "LA Clippers"
                 },
                 {
                     "firstName": "Kemba",
                     "lastName": "Walker",
                     "temporaryDisplayName": "Walker, Kemba",
-                    "personId": "202689"
+                    "personId": "202689",
+                    "jersey": "8",
+                    "pos": "G",
+                    "yearsPro": "8",
+                    "collegeName": "Connecticut",
+                    "team": "Boston Celtics"
                 },
                 {
                     "firstName": "Khris",
                     "lastName": "Middleton",
                     "temporaryDisplayName": "Middleton, Khris",
-                    "personId": "203114"
+                    "personId": "203114",
+                    "jersey": "22",
+                    "pos": "F",
+                    "yearsPro": "7",
+                    "collegeName": "Texas A&M",
+                    "team": "Milwaukee Bucks"
                 },
                 {
                     "firstName": "Jaylen",
                     "lastName": "Brown",
                     "temporaryDisplayName": "Brown, Jaylen",
-                    "personId": "1627759"
+                    "personId": "1627759",
+                    "jersey": "7",
+                    "pos": "G-F",
+                    "yearsPro": "3",
+                    "collegeName": "California",
+                    "team": "Boston Celtics"
                 },
                 {
                     "firstName": "Tobias",
                     "lastName": "Harris",
                     "temporaryDisplayName": "Harris, Tobias",
-                    "personId": "202699"
+                    "personId": "202699",
+                    "jersey": "12",
+                    "pos": "F",
+                    "yearsPro": "8",
+                    "collegeName": "Tennessee",
+                    "team": "Philadelphia 76ers"
                 },
                 {
                     "firstName": "T.J.",
                     "lastName": "Warren",
                     "temporaryDisplayName": "Warren, T.J.",
-                    "personId": "203933"
+                    "personId": "203933",
+                    "team": "Indiana Pacers",
+                    "jersey": "1",
+                    "pos": "F",
+                    "yearsPro": "5",
+                    "collegeName": "North Carolina State"
                 },
                 {
                     "firstName": "Evan",
                     "lastName": "Fournier",
                     "temporaryDisplayName": "Fournier, Evan",
-                    "personId": "203095"
+                    "personId": "203095",
+                    "jersey": "10",
+                    "pos": "G-F",
+                    "yearsPro": "7",
+                    "collegeName": " ",
+                    "team": "Orlando Magic"
                 }
             ]
         },
@@ -61,49 +102,89 @@
                     "firstName": "Luka",
                     "lastName": "Doncic",
                     "temporaryDisplayName": "Doncic, Luka",
-                    "personId": "1629029"
+                    "personId": "1629029",
+                    "jersey": "77",
+                    "pos": "F-G",
+                    "yearsPro": "1",
+                    "collegeName": " ",
+                    "team": "Dallas Mavericks"
                 },
                 {
                     "firstName": "CJ",
                     "lastName": "McCollum",
                     "temporaryDisplayName": "McCollum, CJ",
-                    "personId": "203468"
+                    "personId": "203468",
+                    "jersey": "3",
+                    "pos": "G",
+                    "yearsPro": "6",
+                    "collegeName": "Lehigh",
+                    "team": "Portland Trail Blazers"
                 },
                 {
                     "firstName": "Joel",
                     "lastName": "Embiid",
                     "temporaryDisplayName": "Embiid, Joel",
-                    "personId": "203954"
+                    "personId": "203954",
+                    "jersey": "21",
+                    "pos": "C-F",
+                    "yearsPro": "3",
+                    "collegeName": "Kansas",
+                    "team": "Philadelphia 76ers"
                 },
                 {
                     "firstName": "Zion",
                     "lastName": "Williamson",
                     "temporaryDisplayName": "Williamson, Zion",
-                    "personId": "1629627"
+                    "personId": "1629627",
+                    "jersey": "1",
+                    "pos": "F",
+                    "yearsPro": "0",
+                    "collegeName": "Duke",
+                    "team": "New Orleans Pelicans"
                 },
                 {
                     "firstName": "Kyle",
                     "lastName": "Lowry",
                     "temporaryDisplayName": "Lowry, Kyle",
-                    "personId": "200768"
+                    "personId": "200768",
+                    "jersey": "7",
+                    "pos": "G",
+                    "yearsPro": "13",
+                    "collegeName": "Villanova",
+                    "team": "Toronto Raptors"
                 },
                 {
                     "firstName": "Kristaps",
                     "lastName": "Porzingis",
                     "temporaryDisplayName": "Porzingis, Kristaps",
-                    "personId": "204001"
+                    "personId": "204001",
+                    "jersey": "6",
+                    "pos": "F-C",
+                    "yearsPro": "3",
+                    "collegeName": " ",
+                    "team": "Dallas Mavericks"
                 },
                 {
                     "firstName": "Danilo",
                     "lastName": "Gallinari",
                     "temporaryDisplayName": "Gallinari, Danilo",
-                    "personId": "201568"
+                    "personId": "201568",
+                    "jersey": "8",
+                    "pos": "F",
+                    "yearsPro": "10",
+                    "collegeName": " ",
+                    "team": "Oklahoma City Thunder"
                 },
                 {
                     "firstName": "Dennis",
                     "lastName": "Schroder",
                     "temporaryDisplayName": "Schroder, Dennis",
-                    "personId": "203471"
+                    "personId": "203471",
+                    "jersey": "17",
+                    "pos": "G",
+                    "yearsPro": "6",
+                    "collegeName": " ",
+                    "team": "Oklahoma City Thunder"
                 }
             ]
         },
@@ -114,49 +195,89 @@
                     "firstName": "Damian",
                     "lastName": "Lillard",
                     "temporaryDisplayName": "Lillard, Damian",
-                    "personId": "203081"
+                    "personId": "203081",
+                    "jersey": "0",
+                    "pos": "G",
+                    "yearsPro": "7",
+                    "collegeName": "Weber State",
+                    "team": "Portland Trail Blazers"
                 },
                 {
                     "firstName": "Jayson",
                     "lastName": "Tatum",
                     "temporaryDisplayName": "Tatum, Jayson",
-                    "personId": "1628369"
+                    "personId": "1628369",
+                    "jersey": "0",
+                    "pos": "F-G",
+                    "yearsPro": "2",
+                    "collegeName": "Duke",
+                    "team": "Boston Celtics"
                 },
                 {
                     "firstName": "DeMar",
                     "lastName": "DeRozan",
                     "temporaryDisplayName": "DeRozan, DeMar",
-                    "personId": "201942"
+                    "personId": "201942",
+                    "jersey": "10",
+                    "pos": "G-F",
+                    "yearsPro": "10",
+                    "collegeName": "USC",
+                    "team": "San Antonio Spurs"
                 },
                 {
                     "firstName": "Brandon",
                     "lastName": "Ingram",
                     "temporaryDisplayName": "Ingram, Brandon",
-                    "personId": "1627742"
+                    "personId": "1627742",
+                    "jersey": "14",
+                    "pos": "F",
+                    "yearsPro": "3",
+                    "collegeName": "Duke",
+                    "team": "New Orleans Pelicans"
                 },
                 {
                     "firstName": "Nikola",
                     "lastName": "Vucevic",
                     "temporaryDisplayName": "Vucevic, Nikola",
-                    "personId": "202696"
+                    "personId": "202696",
+                    "jersey": "9",
+                    "pos": "C",
+                    "yearsPro": "8",
+                    "collegeName": "USC",
+                    "team": "Orlando Magic"
                 },
                 {
                     "firstName": "Shai",
                     "lastName": "Gilgeous-Alexander",
                     "temporaryDisplayName": "Gilgeous-Alexander, Shai",
-                    "personId": "1628983"
+                    "personId": "1628983",
+                    "jersey": "2",
+                    "pos": "G-F",
+                    "yearsPro": "1",
+                    "collegeName": "Kentucky",
+                    "team": "Oklahoma City Thunder"
                 },
                 {
                     "firstName": "Buddy",
                     "lastName": "Hield",
                     "temporaryDisplayName": "Hield, Buddy",
-                    "personId": "1627741"
+                    "personId": "1627741",
+                    "jersey": "24",
+                    "pos": "G",
+                    "yearsPro": "3",
+                    "collegeName": "Oklahoma",
+                    "team": "Sacramento Kings"
                 },
                 {
                     "firstName": "Deandre",
                     "lastName": "Ayton",
                     "temporaryDisplayName": "Ayton, Deandre",
-                    "personId": "1629028"
+                    "personId": "1629028",
+                    "jersey": "22",
+                    "pos": "C",
+                    "yearsPro": "1",
+                    "collegeName": "Arizona",
+                    "team": "Phoenix Suns"
                 }
             ]
         },
@@ -167,49 +288,89 @@
                     "firstName": "Giannis",
                     "lastName": "Antetokounmpo",
                     "temporaryDisplayName": "Antetokounmpo, Giannis",
-                    "personId": "203507"
+                    "personId": "203507",
+                    "jersey": "34",
+                    "pos": "F",
+                    "yearsPro": "6",
+                    "collegeName": " ",
+                    "team": "Milwaukee Bucks"
                 },
                 {
                     "firstName": "Anthony",
                     "lastName": "Davis",
                     "temporaryDisplayName": "Davis, Anthony",
-                    "personId": "203076"
+                    "personId": "203076",
+                    "jersey": "3",
+                    "pos": "F-C",
+                    "yearsPro": "7",
+                    "collegeName": "Kentucky",
+                    "team": "Los Angeles Lakers"
                 },
                 {
                     "firstName": "Devin",
                     "lastName": "Booker",
                     "temporaryDisplayName": "Booker, Devin",
-                    "personId": "1626164"
+                    "personId": "1626164",
+                    "jersey": "1",
+                    "pos": "G",
+                    "yearsPro": "4",
+                    "collegeName": "Kentucky",
+                    "team": "Phoenix Suns"
                 },
                 {
                     "firstName": "Jimmy",
                     "lastName": "Butler",
                     "temporaryDisplayName": "Butler, Jimmy",
-                    "personId": "202710"
+                    "personId": "202710",
+                    "jersey": "22",
+                    "pos": "F",
+                    "yearsPro": "8",
+                    "collegeName": "Marquette",
+                    "team": "Miami Heat"
                 },
                 {
                     "firstName": "De'Aaron",
                     "lastName": "Fox",
                     "temporaryDisplayName": "Fox, De'Aaron",
-                    "personId": "1628368"
+                    "personId": "1628368",
+                    "jersey": "5",
+                    "pos": "G",
+                    "yearsPro": "2",
+                    "collegeName": "Kentucky",
+                    "team": "Sacramento Kings"
                 },
                 {
                     "firstName": "Chris",
                     "lastName": "Paul",
                     "temporaryDisplayName": "Paul, Chris",
-                    "personId": "101108"
+                    "personId": "101108",
+                    "jersey": "3",
+                    "pos": "G",
+                    "yearsPro": "14",
+                    "collegeName": "Wake Forest",
+                    "team": "Oklahoma City Thunder"
                 },
                 {
                     "firstName": "Mike",
                     "lastName": "Conley",
                     "temporaryDisplayName": "Conley, Mike",
-                    "personId": "201144"
+                    "personId": "201144",
+                    "jersey": "10",
+                    "pos": "G",
+                    "yearsPro": "12",
+                    "collegeName": "Ohio State",
+                    "team": "Utah Jazz"
                 },
                 {
                     "firstName": "Lou",
                     "lastName": "Williams",
                     "temporaryDisplayName": "Williams, Lou",
-                    "personId": "101150"
+                    "personId": "101150",
+                    "jersey": "23",
+                    "pos": "G",
+                    "yearsPro": "14",
+                    "collegeName": "No College",
+                    "team": "LA Clippers"
                 }
             ]
         },
@@ -220,49 +381,89 @@
                     "firstName": "LeBron",
                     "lastName": "James",
                     "temporaryDisplayName": "James, LeBron",
-                    "personId": "2544"
+                    "personId": "2544",
+                    "jersey": "23",
+                    "pos": "F",
+                    "yearsPro": "16",
+                    "collegeName": " ",
+                    "team": "Los Angeles Lakers"
                 },
                 {
                     "firstName": "Pascal",
                     "lastName": "Siakam",
                     "temporaryDisplayName": "Siakam, Pascal",
-                    "personId": "1627783"
+                    "personId": "1627783",
+                    "jersey": "43",
+                    "pos": "F",
+                    "yearsPro": "3",
+                    "collegeName": "New Mexico State",
+                    "team": "Toronto Raptors"
                 },
                 {
                     "firstName": "Paul",
                     "lastName": "George",
                     "temporaryDisplayName": "George, Paul",
-                    "personId": "202331"
+                    "personId": "202331",
+                    "jersey": "13",
+                    "pos": "F",
+                    "yearsPro": "9",
+                    "collegeName": "Fresno State",
+                    "team": "LA Clippers"
                 },
                 {
                     "firstName": "Jamal",
                     "lastName": "Murray",
                     "temporaryDisplayName": "Murray, Jamal",
-                    "personId": "1627750"
+                    "personId": "1627750",
+                    "jersey": "27",
+                    "pos": "G",
+                    "yearsPro": "3",
+                    "collegeName": "Kentucky",
+                    "team": "Denver Nuggets"
                 },
                 {
                     "firstName": "Ja",
                     "lastName": "Morant",
                     "temporaryDisplayName": "Morant, Ja",
-                    "personId": "1629630"
+                    "personId": "1629630",
+                    "jersey": "12",
+                    "pos": "G",
+                    "yearsPro": "0",
+                    "collegeName": "Murray State",
+                    "team": "Memphis Grizzlies"
                 },
                 {
                     "firstName": "Jrue",
                     "lastName": "Holiday",
                     "temporaryDisplayName": "Holiday, Jrue",
-                    "personId": "201950"
+                    "personId": "201950",
+                    "jersey": "11",
+                    "pos": "G",
+                    "yearsPro": "10",
+                    "collegeName": "UCLA",
+                    "team": "New Orleans Pelicans"
                 },
                 {
                     "firstName": "Duncan",
                     "lastName": "Robinson",
                     "temporaryDisplayName": "Robinson, Duncan",
-                    "personId": "1629130"
+                    "personId": "1629130",
+                    "jersey": "55",
+                    "pos": "F",
+                    "yearsPro": "1",
+                    "collegeName": "Michigan",
+                    "team": "Miami Heat"
                 },
                 {
                     "firstName": "Gordon",
                     "lastName": "Hayward",
                     "temporaryDisplayName": "Hayward, Gordon",
-                    "personId": "202330"
+                    "personId": "202330",
+                    "jersey": "20",
+                    "pos": "F",
+                    "yearsPro": "9",
+                    "collegeName": "Butler",
+                    "team": "Boston Celtics"
                 }
             ]
         },
@@ -273,49 +474,89 @@
                     "firstName": "James",
                     "lastName": "Harden",
                     "temporaryDisplayName": "Harden, James",
-                    "personId": "201935"
+                    "personId": "201935",
+                    "jersey": "13",
+                    "pos": "G",
+                    "yearsPro": "10",
+                    "collegeName": "Arizona State",
+                    "team": "Houston Rockets"
                 },
                 {
                     "firstName": "Nikola",
                     "lastName": "Jokic",
                     "temporaryDisplayName": "Jokic, Nikola",
-                    "personId": "203999"
+                    "personId": "203999",
+                    "jersey": "15",
+                    "pos": "C",
+                    "yearsPro": "4",
+                    "collegeName": " ",
+                    "team": "Denver Nuggets"
                 },
                 {
                     "firstName": "Donovan",
                     "lastName": "Mitchell",
                     "temporaryDisplayName": "Mitchell, Donovan",
-                    "personId": "1628378"
+                    "personId": "1628378",
+                    "jersey": "45",
+                    "pos": "G",
+                    "yearsPro": "2",
+                    "collegeName": "Louisville",
+                    "team": "Utah Jazz"
                 },
                 {
                     "firstName": "Ben",
                     "lastName": "Simmons",
                     "temporaryDisplayName": "Simmons, Ben",
-                    "personId": "1627732"
+                    "personId": "1627732",
+                    "jersey": "25",
+                    "pos": "G-F",
+                    "yearsPro": "2",
+                    "collegeName": "Louisiana State",
+                    "team": "Philadelphia 76ers"
                 },
                 {
                     "firstName": "Caris",
                     "lastName": "LeVert",
                     "temporaryDisplayName": "LeVert, Caris",
-                    "personId": "1627747"
+                    "personId": "1627747",
+                    "jersey": "22",
+                    "pos": "G",
+                    "yearsPro": "3",
+                    "collegeName": "Michigan",
+                    "team": "Brooklyn Nets"
                 },
                 {
                     "firstName": "Malcolm",
                     "lastName": "Brogdon",
                     "temporaryDisplayName": "Brogdon, Malcolm",
-                    "personId": "1627763"
+                    "personId": "1627763",
+                    "jersey": "7",
+                    "pos": "G",
+                    "yearsPro": "3",
+                    "collegeName": "Virginia",
+                    "team": "Indiana Pacers"
                 },
                 {
                     "firstName": "Bam",
                     "lastName": "Adebayo",
                     "temporaryDisplayName": "Adebayo, Bam",
-                    "personId": "1628389"
+                    "personId": "1628389",
+                    "jersey": "13",
+                    "pos": "C-F",
+                    "yearsPro": "2",
+                    "collegeName": "Kentucky",
+                    "team": "Miami Heat"
                 },
                 {
                     "firstName": "Fred",
                     "lastName": "VanVleet",
                     "temporaryDisplayName": "VanVleet, Fred",
-                    "personId": "1627832"
+                    "personId": "1627832",
+                    "jersey": "23",
+                    "pos": "G",
+                    "yearsPro": "3",
+                    "collegeName": "Wichita State",
+                    "team": "Toronto Raptors"
                 }
             ]
         }

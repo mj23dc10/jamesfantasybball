@@ -25,10 +25,17 @@ cron.schedule('0 12 * * *', async () => {
 });
 
 app.get("/", (req, res, next) => {
-    res.json("Welcom to the James Fantasy Basketball League: Bubble 2020 Edition");
+    res.send("Welcome to the James Fantasy Basketball League: Bubble 2020 Edition");
 });
 app.get("/standings", (req, res, next) => {
     fs.readFile('store/standings.json', 'utf8', (err, data) => {
+        res.header("Content-Type",'application/json');
+        res.send(JSON.stringify(JSON.parse(data), null, 4));
+    });
+    
+});
+app.get("/rosters", (req, res, next) => {
+    fs.readFile('store/roster.json', 'utf8', (err, data) => {
         res.header("Content-Type",'application/json');
         res.send(JSON.stringify(JSON.parse(data), null, 4));
     });

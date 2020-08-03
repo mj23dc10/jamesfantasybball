@@ -23,4 +23,4 @@ cron.schedule('0 12 * * *', async () => {
     }
 });
 //Add some service to get the current stadning s points totals from store/standtings file
-app.listen("9280");
+app.listen(process.env.PORT || 9280);

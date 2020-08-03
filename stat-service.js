@@ -92,7 +92,7 @@ const getCurrentStandingsByDate = async (date) => {
                 var gamesPlayed = 0;
                 team.roster.forEach(async player => {
                     let points = playerStats.get(player.personId);
-                    if (points){
+                    if (points) {
                         totalTeamPoints += points;
                         gamesPlayed++;
                     }
@@ -105,7 +105,7 @@ const getCurrentStandingsByDate = async (date) => {
                     currentStandings.standings.push({
                         "name": team.name,
                         "points": totalTeamPoints,
-                        "gamesLeft" : MAX_GAMES - gamesPlayed,
+                        "gamesLeft": MAX_GAMES - gamesPlayed,
                         [date + "_points"]: totalTeamPoints
                     })
                 }
@@ -130,8 +130,8 @@ const getCurrentStandingsByDate = async (date) => {
             try {
                 fs.writeFileSync("store/standings.json", JSON.stringify(currentStandings, null, 4));
                 let tweetContent = "James Fantasy BBall Standings: \n";
-                for(entry of currentStandings.standings){
-                    tweetContent+=entry.standing+" "+entry.name+" Points: "+entry.points+ "\n";
+                for (entry of currentStandings.standings) {
+                    tweetContent += entry.standing + " " + entry.name + " Points: " + entry.points + "Games Left: " + entry.gamesLeft + "\n";
                 }
                 twitter.tweetScores(tweetContent);
             } catch (err) {

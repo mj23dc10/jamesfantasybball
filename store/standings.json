@@ -1,59 +1,77 @@
 {
-    "lastUpdated": "20200801",
+    "lastUpdated": "20200804",
     "standings": [
         {
             "name": "James_Darcy",
-            "points": 246,
-            "gamesLeft": 55,
+            "points": 533,
+            "gamesLeft": 41,
             "20200730_points": 28,
             "standing": 1,
             "20200731_points": 111,
-            "20200801_points": 107
+            "20200801_points": 107,
+            "20200802_points": 106,
+            "20200803_points": 59,
+            "20200804_points": 122
         },
         {
             "name": "James_Tyler",
-            "points": 222,
-            "gamesLeft": 55,
+            "points": 492,
+            "gamesLeft": 44,
             "20200730_points": 54,
             "standing": 2,
             "20200731_points": 102,
-            "20200801_points": 66
-        },
-        {
-            "name": "James_Bill",
-            "points": 222,
-            "gamesLeft": 55,
-            "20200730_points": 13,
-            "standing": 3,
-            "20200731_points": 100,
-            "20200801_points": 109
-        },
-        {
-            "name": "James_Cameron",
-            "points": 189,
-            "gamesLeft": 54,
-            "20200730_points": 66,
-            "standing": 4,
-            "20200731_points": 39,
-            "20200801_points": 84
-        },
-        {
-            "name": "James_Shane",
-            "points": 172,
-            "gamesLeft": 56,
-            "20200730_points": 20,
-            "standing": 5,
-            "20200731_points": 66,
-            "20200801_points": 86
+            "20200801_points": 66,
+            "20200802_points": 79,
+            "20200803_points": 105,
+            "20200804_points": 86
         },
         {
             "name": "James_Kevin",
-            "points": 169,
-            "gamesLeft": 55,
+            "points": 475,
+            "gamesLeft": 41,
             "20200730_points": 23,
-            "standing": 6,
+            "standing": 3,
             "20200731_points": 113,
-            "20200801_points": 33
+            "20200801_points": 33,
+            "20200802_points": 120,
+            "20200803_points": 78,
+            "20200804_points": 108
+        },
+        {
+            "name": "James_Bill",
+            "points": 469,
+            "gamesLeft": 45,
+            "20200730_points": 13,
+            "standing": 4,
+            "20200731_points": 100,
+            "20200801_points": 109,
+            "20200802_points": 87,
+            "20200803_points": 84,
+            "20200804_points": 76
+        },
+        {
+            "name": "James_Shane",
+            "points": 423,
+            "gamesLeft": 45,
+            "20200730_points": 20,
+            "standing": 5,
+            "20200731_points": 66,
+            "20200801_points": 86,
+            "20200802_points": 58,
+            "20200803_points": 137,
+            "20200804_points": 56
+        },
+        {
+            "name": "James_Cameron",
+            "points": 368,
+            "gamesLeft": 44,
+            "20200730_points": 66,
+            "standing": 6,
+            "20200731_points": 39,
+            "20200801_points": 84,
+            "20200802_points": 47,
+            "20200803_points": 73,
+            "20200804_points": 59
         }
     ]
 }

@@ -131,7 +131,7 @@ const getCurrentStandingsByDate = async (date) => {
                 fs.writeFileSync("store/standings.json", JSON.stringify(currentStandings, null, 4));
                 let tweetContent = "James Fantasy BBall Standings: \n";
                 for (entry of currentStandings.standings) {
-                    tweetContent += entry.standing + " " + entry.name + " Points: " + entry.points + "Games Left: " + entry.gamesLeft + "\n";
+                    tweetContent += entry.standing + " " + entry.name + " Points: " + entry.points + " Games Left: " + entry.gamesLeft + "\n";
                 }
                 twitter.tweetScores(tweetContent);
             } catch (err) {

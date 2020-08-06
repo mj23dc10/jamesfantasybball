@@ -31,6 +31,12 @@ router.get("/roster/:team", (req, res) => {
     
 });
 
+app.get("/standings", (req, res, next) => {
+    fs.readFile('store/standings.json', 'utf8', (err, data) => {
+        res.header("Content-Type", 'application/json');
+        res.send(JSON.stringify(JSON.parse(data), null, 4));
+    });
+});
 //ENDPOINTS
 /* app.get("", (req, res, next) => {
     res.send("Welcome to the James Fantasy Basketball League: Bubble 2020 Edition");

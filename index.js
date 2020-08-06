@@ -67,6 +67,7 @@ cron.schedule('0 12 * * *', async () => {
         await stat_service.getCurrentStandingsByDate(dateToRun);
         days--;
     }
+    await stat_service.tweetStandings();
 });
 
 app.use("/", router);

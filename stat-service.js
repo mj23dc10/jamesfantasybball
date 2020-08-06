@@ -129,11 +129,6 @@ const getCurrentStandingsByDate = async (date) => {
             //Write the updates standings to disk and save
             try {
                 fs.writeFileSync("store/standings.json", JSON.stringify(currentStandings, null, 4));
-                let tweetContent = "James Fantasy BBall Standings: \n";
-                for (entry of currentStandings.standings) {
-                    tweetContent += entry.standing + " " + entry.name + " Points: " + entry.points + " Games Left: " + entry.gamesLeft + "\n";
-                }
-                twitter.tweetScores(tweetContent);
             } catch (err) {
                 console.error(err)
             }
@@ -154,9 +149,9 @@ const updateRosterInfo = async () => {
                 player['jersey'] = pData.jersey;
                 player['pos'] = pData.pos;
                 player['yearsPro'] = pData.yearsPro;
-                player['collegeName'] = pData.collegeName; 
+                player['collegeName'] = pData.collegeName;
                 let teamData = nbaTeams.league.standard.find(o => o.teamId === pData.teamId);
-                player['team'] = teamData.fullName; 
+                player['team'] = teamData.fullName;
             }
         });
     });
@@ -167,9 +162,21 @@ const updateRosterInfo = async () => {
     }
 };
 
+const tweetStandings = async () => {
+    fs.readFile('store/standings.json', 'utf8', (err, data) => {
+        const currentStandings = JSON.parse(data);
+        let tweetContent = "James Fantasy BBall Standings: \n";
+        for (entry of currentStandings.standings) {
+            tweetContent += entry.standing + " " + entry.name + " Points: " + entry.points + " Games Left: " + entry.gamesLeft + "\n";
+        }
+        twitter.tweetScores(tweetContent);
+    });
+};
+
 module.exports = {
     getCurrentStandingsByDate,
     getGameIdsByDate,
     getPlayerPointsByDateAndPlayerId,
-    getPlayerIdByName
+    getPlayerIdByName,
+    tweetStandings
 }

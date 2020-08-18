@@ -66,7 +66,11 @@ const getPlayerStatsByDate = async (date) => {
             const response = await axios.get(nbaDataUrlPrefix + date + "/" + gameId + boxscoreSuffix);
             const boxscoreData = response.data;
             boxscoreData.stats.activePlayers.forEach(player => {
-                playerMap.set(player.personId, parseInt(player.points, 10))
+                playerMap.set(player.personId, parseInt(player.points, 10)
+                    + parseInt(player.totReb, 10)
+                    + parseInt(player.assists, 10)
+                    + parseInt(player.steals, 10)
+                    + parseInt(player.blocks, 10))
             });
         } catch (error) {
             console.error(error);
@@ -75,9 +79,9 @@ const getPlayerStatsByDate = async (date) => {
     return playerMap;
 };
 
-const getCurrentStandingsByDate = async (date) => {
-    let jamesLeague = JSON.parse(fs.readFileSync('store/roster.json', 'utf8'));
-    let currentStandings = JSON.parse(fs.readFileSync('store/standings.json', 'utf8'));
+const getCurrentStandingsByDate = async (date, rosterFile, standingFile) => {
+    let jamesLeague = JSON.parse(fs.readFileSync(rosterFile, 'utf8'));
+    let currentStandings = JSON.parse(fs.readFileSync(standingFile, 'utf8'));
     //Check do we have standings up to this date
     const searchDate = moment(date, 'YYYYMMDD')
     const lastUpdate = moment(currentStandings.lastUpdated, 'YYYYMMDD')
@@ -94,18 +98,18 @@ const getCurrentStandingsByDate = async (date) => {
                     let points = playerStats.get(player.personId);
                     if (points) {
                         totalTeamPoints += points;
-                        gamesPlayed++;
+                        //gamesPlayed++;
                     }
                 });
                 if (teamStanding) {
                     teamStanding.points += totalTeamPoints;
                     teamStanding[date + "_points"] = totalTeamPoints;
-                    teamStanding.gamesLeft -= gamesPlayed;
+                    // teamStanding.gamesLeft -= gamesPlayed;
                 } else {
                     currentStandings.standings.push({
                         "name": team.name,
                         "points": totalTeamPoints,
-                        "gamesLeft": MAX_GAMES - gamesPlayed,
+                        //"gamesLeft": MAX_GAMES - gamesPlayed,
                         [date + "_points"]: totalTeamPoints
                     })
                 }
@@ -128,7 +132,7 @@ const getCurrentStandingsByDate = async (date) => {
             console.log(currentStandings.standings)
             //Write the updates standings to disk and save
             try {
-                fs.writeFileSync("store/standings.json", JSON.stringify(currentStandings, null, 4));
+                fs.writeFileSync(standingFile, JSON.stringify(currentStandings, null, 4));
             } catch (err) {
                 console.error(err)
             }
@@ -139,33 +143,35 @@ const getCurrentStandingsByDate = async (date) => {
 };
 
 const updateRosterInfo = async () => {
-    let jamesLeague = JSON.parse(fs.readFileSync('store/roster.json', 'utf8'));
+    let jamesLeague = JSON.parse(fs.readFileSync('store/playoff-roster.json', 'utf8'));
     let players = JSON.parse(fs.readFileSync('sample-data/players.json', 'utf8'));
     let nbaTeams = JSON.parse(fs.readFileSync('sample-data/teams.json', 'utf8'));
     jamesLeague.teams.forEach(team => {
         team.roster.forEach(async player => {
             let pData = players.league.standard.find(o => o.personId === player.personId);
             if (pData) {
+                player['firstName'] = pData.firstName;
+                player['lastName'] = pData.lastName;
                 player['jersey'] = pData.jersey;
                 player['pos'] = pData.pos;
                 player['yearsPro'] = pData.yearsPro;
                 player['collegeName'] = pData.collegeName;
                 let teamData = nbaTeams.league.standard.find(o => o.teamId === pData.teamId);
-                player['team'] = teamData.fullName;
+                player['teamName'] = teamData.fullName;
             }
         });
     });
     try {
-        fs.writeFileSync("store/roster.json", JSON.stringify(jamesLeague, null, 4));
+        fs.writeFileSync("store/playoff-roster.json", JSON.stringify(jamesLeague, null, 4));
     } catch (err) {
         console.error(err)
     }
 };
 
-const tweetStandings = async () => {
-    fs.readFile('store/standings.json', 'utf8', (err, data) => {
+const tweetStandings = async (standingFile) => {
+    fs.readFile(standingFile, 'utf8', (err, data) => {
         const currentStandings = JSON.parse(data);
-        let tweetContent = "James Fantasy BBall Standings: \n";
+        let tweetContent = "Playoff Fantasy BBall Standings: \n";
         for (entry of currentStandings.standings) {
             tweetContent += entry.standing + " " + entry.name + " Points: " + entry.points + " Games Left: " + entry.gamesLeft + "\n";
         }
@@ -173,6 +179,7 @@ const tweetStandings = async () => {
     });
 };
 
+updateRosterInfo();
 module.exports = {
     getCurrentStandingsByDate,
     getGameIdsByDate,

@@ -8,7 +8,6 @@ mixin standingsThumbCard(standing)
       .card-body
         .card-text Rank: #{standing.standing}
         .card-text Points: #{standing.points}
-        .card-text.mb-4 Games Left: #{standing.gamesLeft}
         .d-flex.justify-content-between.align-items-center
           .btn-group
             a.btn.btn-sm.btn-outline-secondary(href=`/roster/${standing.name}`) Roster

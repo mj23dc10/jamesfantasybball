@@ -1,0 +1,605 @@
+{
+    "lastUpdateDate": "20200730",
+    "teams": [
+        {
+            "name": "Greg",
+            "roster": [
+                {
+                    "nickname": "The Little Emperor",
+                    "personId": "2544",
+                    "firstName": "LeBron",
+                    "lastName": "James",
+                    "jersey": "23",
+                    "pos": "F",
+                    "yearsPro": "16",
+                    "collegeName": " ",
+                    "teamName": "Los Angeles Lakers"
+                },
+                {
+                    "nickname": "Bubble GOAT",
+                    "personId": "203933",
+                    "firstName": "T.J.",
+                    "lastName": "Warren",
+                    "jersey": "1",
+                    "pos": "F",
+                    "yearsPro": "5",
+                    "collegeName": "North Carolina State",
+                    "teamName": "Indiana Pacers"
+                },
+                {
+                    "nickname": "Instagram Story Dome",
+                    "personId": "1627750",
+                    "firstName": "Jamal",
+                    "lastName": "Murray",
+                    "jersey": "27",
+                    "pos": "G",
+                    "yearsPro": "3",
+                    "collegeName": "Kentucky",
+                    "teamName": "Denver Nuggets"
+                },
+                {
+                    "nickname": "The Dragon",
+                    "personId": "201609",
+                    "firstName": "Goran",
+                    "lastName": "Dragic",
+                    "jersey": "7",
+                    "pos": "G",
+                    "yearsPro": "11",
+                    "collegeName": " ",
+                    "teamName": "Miami Heat"
+                },
+                {
+                    "nickname": "II Gallo",
+                    "personId": "201568",
+                    "firstName": "Danilo",
+                    "lastName": "Gallinari",
+                    "jersey": "8",
+                    "pos": "F",
+                    "yearsPro": "10",
+                    "collegeName": " ",
+                    "teamName": "Oklahoma City Thunder"
+                }
+            ]
+        },
+        {
+            "name": "Kevin M",
+            "roster": [
+                {
+                    "nickname": "Fun Guy",
+                    "personId": "202695",
+                    "firstName": "Kawhi",
+                    "lastName": "Leonard",
+                    "jersey": "2",
+                    "pos": "F",
+                    "yearsPro": "8",
+                    "collegeName": "San Diego State",
+                    "teamName": "LA Clippers"
+                },
+                {
+                    "nickname": "Edmund",
+                    "personId": "1627832",
+                    "firstName": "Fred",
+                    "lastName": "VanVleet",
+                    "jersey": "23",
+                    "pos": "G",
+                    "yearsPro": "3",
+                    "collegeName": "Wichita State",
+                    "teamName": "Toronto Raptors"
+                },
+                {
+                    "nickname": "I'll shoot it over Jesus",
+                    "personId": "1628398",
+                    "firstName": "Kyle",
+                    "lastName": "Kuzma",
+                    "jersey": "0",
+                    "pos": "F",
+                    "yearsPro": "2",
+                    "collegeName": "Utah",
+                    "teamName": "Los Angeles Lakers"
+                },
+                {
+                    "nickname": "Aician",
+                    "personId": "1628983",
+                    "firstName": "Shai",
+                    "lastName": "Gilgeous-Alexander",
+                    "jersey": "2",
+                    "pos": "G-F",
+                    "yearsPro": "1",
+                    "collegeName": "Kentucky",
+                    "teamName": "Oklahoma City Thunder"
+                },
+                {
+                    "nickname": "The Skate Instructor",
+                    "personId": "101108",
+                    "firstName": "Chris",
+                    "lastName": "Paul",
+                    "jersey": "3",
+                    "pos": "G",
+                    "yearsPro": "14",
+                    "collegeName": "Wake Forest",
+                    "teamName": "Oklahoma City Thunder"
+                }
+            ]
+        },
+        {
+            "name": "Darcy",
+            "roster": [
+                {
+                    "nickname": "Swaggy L",
+                    "personId": "1629029",
+                    "firstName": "Luka",
+                    "lastName": "Doncic",
+                    "jersey": "77",
+                    "pos": "F-G",
+                    "yearsPro": "1",
+                    "collegeName": " ",
+                    "teamName": "Dallas Mavericks"
+                },
+                {
+                    "nickname": "BAM BAM",
+                    "personId": "1628389",
+                    "firstName": "Bam",
+                    "lastName": "Adebayo",
+                    "jersey": "13",
+                    "pos": "C-F",
+                    "yearsPro": "2",
+                    "collegeName": "Kentucky",
+                    "teamName": "Miami Heat"
+                },
+                {
+                    "nickname": "The Cook",
+                    "personId": "201572",
+                    "firstName": "Brook",
+                    "lastName": "Lopez",
+                    "jersey": "11",
+                    "pos": "C",
+                    "yearsPro": "11",
+                    "collegeName": "Stanford",
+                    "teamName": "Milwaukee Bucks"
+                },
+                {
+                    "nickname": "Houston Grant",
+                    "personId": "203924",
+                    "firstName": "Jerami",
+                    "lastName": "Grant",
+                    "jersey": "9",
+                    "pos": "F",
+                    "yearsPro": "5",
+                    "collegeName": "Syracuse",
+                    "teamName": "Denver Nuggets"
+                },
+                {
+                    "nickname": "The Trill",
+                    "personId": "203115",
+                    "firstName": "Will",
+                    "lastName": "Barton",
+                    "jersey": "5",
+                    "pos": "G",
+                    "yearsPro": "7",
+                    "collegeName": "Memphis",
+                    "teamName": "Denver Nuggets"
+                }
+            ]
+        },
+        {
+            "name": "Steve",
+            "roster": [
+                {
+                    "nickname": "Phatman",
+                    "personId": "203076",
+                    "firstName": "Anthony",
+                    "lastName": "Davis",
+                    "jersey": "3",
+                    "pos": "F-C",
+                    "yearsPro": "7",
+                    "collegeName": "Kentucky",
+                    "teamName": "Los Angeles Lakers"
+                },
+                {
+                    "nickname": "Knew Brett Brown Was Shit - Buckets",
+                    "personId": "202710",
+                    "firstName": "Jimmy",
+                    "lastName": "Butler",
+                    "jersey": "22",
+                    "pos": "F",
+                    "yearsPro": "8",
+                    "collegeName": "Marquette",
+                    "teamName": "Miami Heat"
+                },
+                {
+                    "nickname": "Mini-LeBron",
+                    "personId": "202339",
+                    "firstName": "Eric",
+                    "lastName": "Bledsoe",
+                    "jersey": "6",
+                    "pos": "G",
+                    "yearsPro": "9",
+                    "collegeName": "Kentucky",
+                    "teamName": "Milwaukee Bucks"
+                },
+                {
+                    "nickname": "I'll Fucking Block Ya",
+                    "personId": "201586",
+                    "firstName": "Serge",
+                    "lastName": "Ibaka",
+                    "jersey": "9",
+                    "pos": "F",
+                    "yearsPro": "10",
+                    "collegeName": " ",
+                    "teamName": "Toronto Raptors"
+                },
+                {
+                    "nickname": "Mr. 94 Feet",
+                    "personId": "201976",
+                    "firstName": "Patrick",
+                    "lastName": "Beverley",
+                    "jersey": "21",
+                    "pos": "G",
+                    "yearsPro": "7",
+                    "collegeName": "Arkansas",
+                    "teamName": "LA Clippers"
+                }
+            ]
+        },
+        {
+            "name": "Bill",
+            "roster": [
+                {
+                    "nickname": "The Alphabet",
+                    "personId": "203507",
+                    "firstName": "Giannis",
+                    "lastName": "Antetokounmpo",
+                    "jersey": "34",
+                    "pos": "F",
+                    "yearsPro": "6",
+                    "collegeName": " ",
+                    "teamName": "Milwaukee Bucks"
+                },
+                {
+                    "nickname": "Terrell",
+                    "personId": "200768",
+                    "firstName": "Kyle",
+                    "lastName": "Lowry",
+                    "jersey": "7",
+                    "pos": "G",
+                    "yearsPro": "13",
+                    "collegeName": "Villanova",
+                    "teamName": "Toronto Raptors"
+                },
+                {
+                    "nickname": "Zupac",
+                    "personId": "1627826",
+                    "firstName": "Ivica",
+                    "lastName": "Zubac",
+                    "jersey": "40",
+                    "pos": "C",
+                    "yearsPro": "3",
+                    "collegeName": " ",
+                    "teamName": "LA Clippers"
+                },
+                {
+                    "nickname": "Philly Cheese",
+                    "personId": "203079",
+                    "firstName": "Dion",
+                    "lastName": "Waiters",
+                    "jersey": "18",
+                    "pos": "G",
+                    "yearsPro": "7",
+                    "collegeName": "Syracuse",
+                    "teamName": "Los Angeles Lakers"
+                },
+                {
+                    "nickname": "I hope Pat Bev is hurt",
+                    "personId": "202704",
+                    "firstName": "Reggie",
+                    "lastName": "Jackson",
+                    "jersey": "1",
+                    "pos": "G",
+                    "yearsPro": "8",
+                    "collegeName": "Boston College",
+                    "teamName": "LA Clippers"
+                }
+            ]
+        },
+        {
+            "name": "Shane",
+            "roster": [
+                {
+                    "nickname": "Batman - Playoff P",
+                    "personId": "202331",
+                    "firstName": "Paul",
+                    "lastName": "George",
+                    "jersey": "13",
+                    "pos": "F",
+                    "yearsPro": "9",
+                    "collegeName": "Fresno State",
+                    "teamName": "LA Clippers"
+                },
+                {
+                    "nickname": "Spicy P",
+                    "personId": "1627783",
+                    "firstName": "Pascal",
+                    "lastName": "Siakam",
+                    "jersey": "43",
+                    "pos": "F",
+                    "yearsPro": "3",
+                    "collegeName": "New Mexico State",
+                    "teamName": "Toronto Raptors"
+                },
+                {
+                    "nickname": "Famously not Markeiff",
+                    "personId": "202694",
+                    "firstName": "Marcus",
+                    "lastName": "Morris Sr.",
+                    "jersey": "31",
+                    "pos": "F",
+                    "yearsPro": "8",
+                    "collegeName": "Kansas",
+                    "teamName": "LA Clippers"
+                },
+                {
+                    "nickname": "MPJ",
+                    "personId": "1629008",
+                    "firstName": "Michael",
+                    "lastName": "Porter Jr.",
+                    "jersey": "1",
+                    "pos": "F",
+                    "yearsPro": "0",
+                    "collegeName": "Missouri",
+                    "teamName": "Denver Nuggets"
+                },
+                {
+                    "nickname": "McBryde",
+                    "personId": "1629130",
+                    "firstName": "Duncan",
+                    "lastName": "Robinson",
+                    "jersey": "55",
+                    "pos": "F",
+                    "yearsPro": "1",
+                    "collegeName": "Michigan",
+                    "teamName": "Miami Heat"
+                }
+            ]
+        },
+        {
+            "name": "Mike",
+            "roster": [
+                {
+                    "nickname": "Baby Joe Johnson",
+                    "personId": "203114",
+                    "firstName": "Khris",
+                    "lastName": "Middleton",
+                    "jersey": "22",
+                    "pos": "F",
+                    "yearsPro": "7",
+                    "collegeName": "Texas A&M",
+                    "teamName": "Milwaukee Bucks"
+                },
+                {
+                    "nickname": "Trez",
+                    "personId": "1626149",
+                    "firstName": "Montrezl",
+                    "lastName": "Harrell",
+                    "jersey": "5",
+                    "pos": "F-C",
+                    "yearsPro": "4",
+                    "collegeName": "Louisville",
+                    "teamName": "LA Clippers"
+                },
+                {
+                    "nickname": "*watch emoji*",
+                    "personId": "203081",
+                    "firstName": "Damian",
+                    "lastName": "Lillard",
+                    "jersey": "0",
+                    "pos": "G",
+                    "yearsPro": "7",
+                    "collegeName": "Weber State",
+                    "teamName": "Portland Trail Blazers"
+                },
+                {
+                    "nickname": "Daniel",
+                    "personId": "202330",
+                    "firstName": "Gordon",
+                    "lastName": "Hayward",
+                    "jersey": "20",
+                    "pos": "F",
+                    "yearsPro": "9",
+                    "collegeName": "Butler",
+                    "teamName": "Boston Celtics"
+                },
+                {
+                    "nickname": "The Menace",
+                    "personId": "203471",
+                    "firstName": "Dennis",
+                    "lastName": "Schroder",
+                    "jersey": "17",
+                    "pos": "G",
+                    "yearsPro": "6",
+                    "collegeName": " ",
+                    "teamName": "Oklahoma City Thunder"
+                }
+            ]
+        },
+        {
+            "name": "Kevin P",
+            "roster": [
+                {
+                    "nickname": "Jimbo Slice",
+                    "personId": "201935",
+                    "firstName": "James",
+                    "lastName": "Harden",
+                    "jersey": "13",
+                    "pos": "G",
+                    "yearsPro": "10",
+                    "collegeName": "Arizona State",
+                    "teamName": "Houston Rockets"
+                },
+                {
+                    "nickname": "Lemon Pepper Lou",
+                    "personId": "101150",
+                    "firstName": "Lou",
+                    "lastName": "Williams",
+                    "jersey": "23",
+                    "pos": "G",
+                    "yearsPro": "14",
+                    "collegeName": "No College",
+                    "teamName": "LA Clippers"
+                },
+                {
+                    "nickname": "Old Man",
+                    "personId": "1627759",
+                    "firstName": "Jaylen",
+                    "lastName": "Brown",
+                    "jersey": "7",
+                    "pos": "G-F",
+                    "yearsPro": "3",
+                    "collegeName": "California",
+                    "teamName": "Boston Celtics"
+                },
+                {
+                    "nickname": "Cardiac",
+                    "personId": "202689",
+                    "firstName": "Kemba",
+                    "lastName": "Walker",
+                    "jersey": "8",
+                    "pos": "G",
+                    "yearsPro": "8",
+                    "collegeName": "Connecticut",
+                    "teamName": "Boston Celtics"
+                },
+                {
+                    "nickname": "Hola Hovito",
+                    "personId": "203506",
+                    "firstName": "Victor",
+                    "lastName": "Oladipo",
+                    "jersey": "4",
+                    "pos": "G",
+                    "yearsPro": "6",
+                    "collegeName": "Indiana",
+                    "teamName": "Indiana Pacers"
+                }
+            ]
+        },
+        {
+            "name": "Pat",
+            "roster": [
+                {
+                    "nickname": "Big Honey",
+                    "personId": "203999",
+                    "firstName": "Nikola",
+                    "lastName": "Jokic",
+                    "jersey": "15",
+                    "pos": "C",
+                    "yearsPro": "4",
+                    "collegeName": " ",
+                    "teamName": "Denver Nuggets"
+                },
+                {
+                    "nickname": "Do-a-180",
+                    "personId": "203954",
+                    "firstName": "Joel",
+                    "lastName": "Embiid",
+                    "jersey": "21",
+                    "pos": "C-F",
+                    "yearsPro": "3",
+                    "collegeName": "Kansas",
+                    "teamName": "Philadelphia 76ers"
+                },
+                {
+                    "nickname": "Lord Covington",
+                    "personId": "203496",
+                    "firstName": "Robert",
+                    "lastName": "Covington",
+                    "jersey": "33",
+                    "pos": "F",
+                    "yearsPro": "6",
+                    "collegeName": "Tennessee State",
+                    "teamName": "Houston Rockets"
+                },
+                {
+                    "nickname": "Stormin Norman",
+                    "personId": "1626181",
+                    "firstName": "Norman",
+                    "lastName": "Powell",
+                    "jersey": "24",
+                    "pos": "G",
+                    "yearsPro": "4",
+                    "collegeName": "UCLA",
+                    "teamName": "Toronto Raptors"
+                },
+                {
+                    "nickname": "The Michael Jordan of Deleware",
+                    "personId": "1628978",
+                    "firstName": "Donte",
+                    "lastName": "DiVincenzo",
+                    "jersey": "0",
+                    "pos": "G",
+                    "yearsPro": "1",
+                    "collegeName": "Villanova",
+                    "teamName": "Milwaukee Bucks"
+                }
+            ]
+        },
+        {
+            "name": "Cameron",
+            "roster": [
+                {
+                    "nickname": "Taco Jay",
+                    "personId": "1628369",
+                    "firstName": "Jayson",
+                    "lastName": "Tatum",
+                    "jersey": "0",
+                    "pos": "F-G",
+                    "yearsPro": "2",
+                    "collegeName": "Duke",
+                    "teamName": "Boston Celtics"
+                },
+                {
+                    "nickname": "LEEEROY JENKINS",
+                    "personId": "201566",
+                    "firstName": "Russell",
+                    "lastName": "Westbrook",
+                    "jersey": "0",
+                    "pos": "G",
+                    "yearsPro": "11",
+                    "collegeName": "UCLA",
+                    "teamName": "Houston Rockets"
+                },
+                {
+                    "nickname": "Wannabe ROY",
+                    "personId": "1628378",
+                    "firstName": "Donovan",
+                    "lastName": "Mitchell",
+                    "jersey": "45",
+                    "pos": "G",
+                    "yearsPro": "2",
+                    "collegeName": "Louisville",
+                    "teamName": "Utah Jazz"
+                },
+                {
+                    "nickname": "Big Burrito",
+                    "personId": "201188",
+                    "firstName": "Marc",
+                    "lastName": "Gasol",
+                    "jersey": "33",
+                    "pos": "C",
+                    "yearsPro": "11",
+                    "collegeName": " ",
+                    "teamName": "Toronto Raptors"
+                },
+                {
+                    "nickname": "Humble Moses",
+                    "personId": "1627763",
+                    "firstName": "Malcolm",
+                    "lastName": "Brogdon",
+                    "jersey": "7",
+                    "pos": "G",
+                    "yearsPro": "3",
+                    "collegeName": "Virginia",
+                    "teamName": "Indiana Pacers"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "lastUpdated": "20200817",
+    "standings": [
+        {
+            "name": "Cameron",
+            "points": 142,
+            "20200817_points": 142,
+            "standing": 1
+        },
+        {
+            "name": "Shane",
+            "points": 117,
+            "20200817_points": 117,
+            "standing": 2
+        },
+        {
+            "name": "Pat",
+            "points": 100,
+            "20200817_points": 100,
+            "standing": 3
+        },
+        {
+            "name": "Kevin M",
+            "points": 96,
+            "20200817_points": 96,
+            "standing": 4
+        },
+        {
+            "name": "Kevin P",
+            "points": 91,
+            "20200817_points": 91,
+            "standing": 5
+        },
+        {
+            "name": "Darcy",
+            "points": 85,
+            "20200817_points": 85,
+            "standing": 6
+        },
+        {
+            "name": "Bill",
+            "points": 57,
+            "20200817_points": 57,
+            "standing": 7
+        },
+        {
+            "name": "Greg",
+            "points": 51,
+            "20200817_points": 51,
+            "standing": 8
+        },
+        {
+            "name": "Steve",
+            "points": 49,
+            "20200817_points": 49,
+            "standing": 9
+        },
+        {
+            "name": "Mike",
+            "points": 31,
+            "20200817_points": 31,
+            "standing": 10
+        }
+    ]
+}

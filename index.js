@@ -24,7 +24,7 @@ router.get("/", async (req, res) => {
     });
 });
 
-router.get("/roster/:team", (req, res) => {
+router.get("/roster/:team", async (req, res) => {
     await updateStandings(true);
     fs.readFile(rosterFile, 'utf8', (err, data) => {
         let roster = JSON.parse(data).teams.find(o => o.name === req.params.team);

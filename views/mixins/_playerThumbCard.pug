@@ -8,6 +8,7 @@ mixin playerThumbCard(player)
         text(x="50%" y="50%" fill="#eceeef" dy=".3em") "#{player.nickname}"
         text(x="50%" y="70%" fill="#eceeef" dy=".3em") #{player.lastName}
       .card-body
+        .card-text Points: #{player.totalPoints}
         .card-text Team: #{player.teamName}
         .card-text Jersey #: #{player.jersey}
         .card-text Postion: #{player.pos}

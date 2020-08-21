@@ -99,18 +99,29 @@ const getCurrentStandingsByDate = async (date, rosterFile, standingFile) => {
                     if (points) {
                         totalTeamPoints += points;
                         //gamesPlayed++;
+                        if(player.totalPoints){
+                            player.totalPoints += points;
+                        } else {
+                            player["totalPoints"] = points;
+                        }
+
                     }
+                });
+                let mvp = team.roster.sort(function (a, b) {
+                    return b.totalPoints - a.totalPoints;
                 });
                 if (teamStanding) {
                     teamStanding.points += totalTeamPoints;
                     teamStanding[date + "_points"] = totalTeamPoints;
+                    teamStanding.mvp = mvp[0].firstName + ' "' +mvp[0].nickname +'" '+ mvp[0].lastName + ' - ' + mvp[0].totalPoints;
                     // teamStanding.gamesLeft -= gamesPlayed;
                 } else {
                     currentStandings.standings.push({
                         "name": team.name,
                         "points": totalTeamPoints,
                         //"gamesLeft": MAX_GAMES - gamesPlayed,
-                        [date + "_points"]: totalTeamPoints
+                        [date + "_points"]: totalTeamPoints,
+                        "mvp": mvp[0].firstName + ' "' +mvp[0].nickname +'" '+ mvp[0].lastName + ' - ' + mvp[0].totalPoints
                     })
                 }
             });
@@ -129,9 +140,9 @@ const getCurrentStandingsByDate = async (date, rosterFile, standingFile) => {
             });
             //Set the last update to the current date
             currentStandings.lastUpdated = date;
-            console.log(currentStandings.standings)
             //Write the updates standings to disk and save
             try {
+                fs.writeFileSync(rosterFile, JSON.stringify(jamesLeague, null, 4));
                 fs.writeFileSync(standingFile, JSON.stringify(currentStandings, null, 4));
             } catch (err) {
                 console.error(err)

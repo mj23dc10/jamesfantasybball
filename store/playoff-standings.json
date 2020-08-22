@@ -1,105 +1,115 @@
 {
-    "lastUpdated": "20200820",
+    "lastUpdated": "20200821",
     "standings": [
         {
-            "name": "Greg",
-            "points": 338,
-            "20200817_points": 51,
-            "mvp": "LeBron \"The Little Emperor\" James - 164",
-            "standing": 1,
-            "20200818_points": 166,
-            "20200819_points": 21,
-            "20200820_points": 100
-        },
-        {
             "name": "Kevin M",
-            "points": 337,
+            "points": 426,
             "20200817_points": 96,
-            "mvp": "Kawhi \"Fun Guy\" Leonard - 146",
-            "standing": 2,
+            "mvp": "Kawhi \"Fun Guy\" Leonard - 154",
+            "standing": 1,
             "20200818_points": 79,
             "20200819_points": 88,
-            "20200820_points": 74
+            "20200820_points": 74,
+            "20200821_points": 89
         },
         {
             "name": "Kevin P",
-            "points": 306,
+            "points": 395,
             "20200817_points": 91,
-            "mvp": "James \"Jimbo Slice\" Harden - 180",
-            "standing": 3,
+            "mvp": "Jaylen \"Old Man\" Brown - 100",
+            "standing": 2,
             "20200818_points": 56,
             "20200819_points": 91,
-            "20200820_points": 68
-        },
-        {
-            "name": "Cameron",
-            "points": 296,
-            "20200817_points": 142,
-            "mvp": "Jayson \"Taco Jay\" Tatum - 135",
-            "standing": 4,
-            "20200818_points": 34,
-            "20200819_points": 89,
-            "20200820_points": 31
-        },
-        {
-            "name": "Pat",
-            "points": 279,
-            "20200817_points": 100,
-            "mvp": "Joel \"Do-a-180\" Embiid - 142",
-            "standing": 5,
-            "20200818_points": 20,
-            "20200819_points": 126,
-            "20200820_points": 33
-        },
-        {
-            "name": "Steve",
-            "points": 278,
-            "20200817_points": 49,
-            "mvp": "Anthony \"Phatman\" Davis - 182",
-            "standing": 6,
-            "20200818_points": 109,
-            "20200819_points": 16,
-            "20200820_points": 104
+            "20200820_points": 68,
+            "20200821_points": 89
         },
         {
             "name": "Shane",
-            "points": 275,
+            "points": 381,
             "20200817_points": 117,
-            "mvp": "Michael \"MPJ\" Porter Jr. - 93",
-            "standing": 7,
+            "mvp": "Pascal \"Spicy P\" Siakam - 100",
+            "standing": 3,
             "20200818_points": 11,
             "20200819_points": 118,
-            "20200820_points": 29
+            "20200820_points": 29,
+            "20200821_points": 106
         },
         {
-            "name": "Darcy",
-            "points": 235,
-            "20200817_points": 85,
-            "mvp": "Luka \"Swaggy L\" Doncic - 147",
-            "standing": 8,
-            "20200818_points": 48,
-            "20200819_points": 58,
-            "20200820_points": 44
+            "name": "Pat",
+            "points": 369,
+            "20200817_points": 100,
+            "mvp": "Joel \"Do-a-180\" Embiid - 140",
+            "standing": 4,
+            "20200818_points": 20,
+            "20200819_points": 126,
+            "20200820_points": 33,
+            "20200821_points": 90
+        },
+        {
+            "name": "Cameron",
+            "points": 365,
+            "20200817_points": 142,
+            "mvp": "Jayson \"Taco Jay\" Tatum - 118",
+            "standing": 5,
+            "20200818_points": 34,
+            "20200819_points": 89,
+            "20200820_points": 31,
+            "20200821_points": 69
+        },
+        {
+            "name": "Greg",
+            "points": 363,
+            "20200817_points": 51,
+            "mvp": "Jamal \"Instagram Story Dome\" Murray - 97",
+            "standing": 6,
+            "20200818_points": 166,
+            "20200819_points": 21,
+            "20200820_points": 100,
+            "20200821_points": 25
+        },
+        {
+            "name": "Steve",
+            "points": 314,
+            "20200817_points": 49,
+            "mvp": "Anthony \"Phatman\" Davis - 91",
+            "standing": 7,
+            "20200818_points": 109,
+            "20200819_points": 16,
+            "20200820_points": 104,
+            "20200821_points": 36
         },
         {
             "name": "Bill",
-            "points": 231,
+            "points": 292,
             "20200817_points": 57,
-            "mvp": "Giannis \"The Alphabet\" Antetokounmpo - 218",
-            "standing": 9,
+            "mvp": "Giannis \"The Alphabet\" Antetokounmpo - 109",
+            "standing": 8,
             "20200818_points": 56,
             "20200819_points": 59,
-            "20200820_points": 59
+            "20200820_points": 59,
+            "20200821_points": 61
+        },
+        {
+            "name": "Darcy",
+            "points": 284,
+            "20200817_points": 85,
+            "mvp": "Luka \"Swaggy L\" Doncic - 139",
+            "standing": 9,
+            "20200818_points": 48,
+            "20200819_points": 58,
+            "20200820_points": 44,
+            "20200821_points": 49
         },
         {
             "name": "Mike",
-            "points": 184,
+            "points": 200,
             "20200817_points": 31,
-            "mvp": "Damian \"*watch emoji*\" Lillard - 136",
+            "mvp": "Damian \"*watch emoji*\" Lillard - 68",
             "standing": 10,
             "20200818_points": 81,
             "20200819_points": 12,
-            "20200820_points": 60
+            "20200820_points": 60,
+            "20200821_points": 16
         }
     ]
 }

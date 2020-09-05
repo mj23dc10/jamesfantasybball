@@ -6,8 +6,9 @@ mixin standingsThumbCard(standing)
         rect(width="100%" height="100%" fill="#55595c")
         text(x="50%" y="50%" fill="#eceeef" dy=".3em") #{standing.name}
       .card-body
-        .card-text Rank: #{standing.standing}
-        .card-text Points: #{standing.points}
+        .card-text Rank: #{standing.standing} 
+        .card-text Points: #{standing.points} 
+        .card-text Players Left : #{standing.playersLeft}
         .card-text MVP: #{standing.mvp}
         .d-flex.justify-content-between.align-items-center
           .btn-group

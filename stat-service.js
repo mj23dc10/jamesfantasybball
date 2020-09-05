@@ -110,18 +110,20 @@ const getCurrentStandingsByDate = async (date, rosterFile, standingFile) => {
                 let mvp = team.roster.sort(function (a, b) {
                     return b.totalPoints - a.totalPoints;
                 });
+                let activePlayers = team.roster.filter(p => p.active).length;
                 if (teamStanding) {
                     teamStanding.points += totalTeamPoints;
                     teamStanding[date + "_points"] = totalTeamPoints;
                     teamStanding.mvp = mvp[0].firstName + ' "' +mvp[0].nickname +'" '+ mvp[0].lastName + ' - ' + mvp[0].totalPoints;
-                    // teamStanding.gamesLeft -= gamesPlayed;
+                    teamStanding.playersLeft = activePlayers;
                 } else {
                     currentStandings.standings.push({
                         "name": team.name,
                         "points": totalTeamPoints,
                         //"gamesLeft": MAX_GAMES - gamesPlayed,
                         [date + "_points"]: totalTeamPoints,
-                        "mvp": mvp[0].firstName + ' "' +mvp[0].nickname +'" '+ mvp[0].lastName + ' - ' + mvp[0].totalPoints
+                        "mvp": mvp[0].firstName + ' "' +mvp[0].nickname +'" '+ mvp[0].lastName + ' - ' + mvp[0].totalPoints,
+                        "playersLeft" : activePlayers
                     })
                 }
             });

@@ -5,19 +5,6 @@
             "name": "Greg",
             "roster": [
                 {
-                    "nickname": "Instagram Story Dome",
-                    "personId": "1627750",
-                    "firstName": "Jamal",
-                    "lastName": "Murray",
-                    "jersey": "27",
-                    "pos": "G",
-                    "yearsPro": "3",
-                    "collegeName": "Kentucky",
-                    "teamName": "Denver Nuggets",
-                    "totalPoints": 332,
-                    "active": true
-                },
-                {
                     "nickname": "The Little Emperor",
                     "personId": "2544",
                     "firstName": "LeBron",
@@ -27,7 +14,20 @@
                     "yearsPro": "16",
                     "collegeName": " ",
                     "teamName": "Los Angeles Lakers",
-                    "totalPoints": 284,
+                    "totalPoints": 484,
+                    "active": true
+                },
+                {
+                    "nickname": "Instagram Story Dome",
+                    "personId": "1627750",
+                    "firstName": "Jamal",
+                    "lastName": "Murray",
+                    "jersey": "27",
+                    "pos": "G",
+                    "yearsPro": "3",
+                    "collegeName": "Kentucky",
+                    "teamName": "Denver Nuggets",
+                    "totalPoints": 471,
                     "active": true
                 },
                 {
@@ -40,7 +40,7 @@
                     "yearsPro": "11",
                     "collegeName": " ",
                     "teamName": "Miami Heat",
-                    "totalPoints": 231,
+                    "totalPoints": 284,
                     "active": true
                 },
                 {
@@ -84,8 +84,21 @@
                     "yearsPro": "8",
                     "collegeName": "San Diego State",
                     "teamName": "LA Clippers",
-                    "totalPoints": 343,
+                    "totalPoints": 531,
                     "active": true
+                },
+                {
+                    "nickname": "Edmund",
+                    "personId": "1627832",
+                    "firstName": "Fred",
+                    "lastName": "VanVleet",
+                    "jersey": "23",
+                    "pos": "G",
+                    "yearsPro": "3",
+                    "collegeName": "Wichita State",
+                    "teamName": "Toronto Raptors",
+                    "totalPoints": 365,
+                    "active": false
                 },
                 {
                     "nickname": "The Skate Instructor",
@@ -99,19 +112,6 @@
                     "teamName": "Oklahoma City Thunder",
                     "totalPoints": 252,
                     "active": false
-                },
-                {
-                    "nickname": "Edmund",
-                    "personId": "1627832",
-                    "firstName": "Fred",
-                    "lastName": "VanVleet",
-                    "jersey": "23",
-                    "pos": "G",
-                    "yearsPro": "3",
-                    "collegeName": "Wichita State",
-                    "teamName": "Toronto Raptors",
-                    "totalPoints": 235,
-                    "active": true
                 },
                 {
                     "nickname": "Aician",
@@ -136,7 +136,7 @@
                     "yearsPro": "2",
                     "collegeName": "Utah",
                     "teamName": "Los Angeles Lakers",
-                    "totalPoints": 95,
+                    "totalPoints": 166,
                     "active": true
                 }
             ]
@@ -144,6 +144,19 @@
         {
             "name": "Darcy",
             "roster": [
+                {
+                    "nickname": "BAM BAM",
+                    "personId": "1628389",
+                    "firstName": "Bam",
+                    "lastName": "Adebayo",
+                    "jersey": "13",
+                    "pos": "C-F",
+                    "yearsPro": "2",
+                    "collegeName": "Kentucky",
+                    "teamName": "Miami Heat",
+                    "totalPoints": 309,
+                    "active": true
+                },
                 {
                     "nickname": "Swaggy L",
                     "personId": "1629029",
@@ -158,19 +171,6 @@
                     "active": false
                 },
                 {
-                    "nickname": "BAM BAM",
-                    "personId": "1628389",
-                    "firstName": "Bam",
-                    "lastName": "Adebayo",
-                    "jersey": "13",
-                    "pos": "C-F",
-                    "yearsPro": "2",
-                    "collegeName": "Kentucky",
-                    "teamName": "Miami Heat",
-                    "totalPoints": 241,
-                    "active": true
-                },
-                {
                     "nickname": "The Cook",
                     "personId": "201572",
                     "firstName": "Brook",
@@ -180,8 +180,8 @@
                     "yearsPro": "11",
                     "collegeName": "Stanford",
                     "teamName": "Milwaukee Bucks",
-                    "totalPoints": 188,
-                    "active": true
+                    "totalPoints": 241,
+                    "active": false
                 },
                 {
                     "nickname": "Houston Grant",
@@ -193,7 +193,7 @@
                     "yearsPro": "5",
                     "collegeName": "Syracuse",
                     "teamName": "Denver Nuggets",
-                    "totalPoints": 138,
+                    "totalPoints": 197,
                     "active": true
                 },
                 {
@@ -223,7 +223,7 @@
                     "yearsPro": "7",
                     "collegeName": "Kentucky",
                     "teamName": "Los Angeles Lakers",
-                    "totalPoints": 278,
+                    "totalPoints": 452,
                     "active": true
                 },
                 {
@@ -236,7 +236,7 @@
                     "yearsPro": "8",
                     "collegeName": "Marquette",
                     "teamName": "Miami Heat",
-                    "totalPoints": 248,
+                    "totalPoints": 308,
                     "active": true
                 },
                 {
@@ -249,8 +249,8 @@
                     "yearsPro": "10",
                     "collegeName": " ",
                     "teamName": "Toronto Raptors",
-                    "totalPoints": 197,
-                    "active": true
+                    "totalPoints": 277,
+                    "active": false
                 },
                 {
                     "nickname": "Mini-LeBron",
@@ -262,8 +262,8 @@
                     "yearsPro": "9",
                     "collegeName": "Kentucky",
                     "teamName": "Milwaukee Bucks",
-                    "totalPoints": 161,
-                    "active": true
+                    "totalPoints": 216,
+                    "active": false
                 },
                 {
                     "nickname": "Mr. 94 Feet",
@@ -275,7 +275,7 @@
                     "yearsPro": "7",
                     "collegeName": "Arkansas",
                     "teamName": "LA Clippers",
-                    "totalPoints": 32,
+                    "totalPoints": 79,
                     "active": true
                 }
             ]
@@ -293,8 +293,8 @@
                     "yearsPro": "6",
                     "collegeName": " ",
                     "teamName": "Milwaukee Bucks",
-                    "totalPoints": 404,
-                    "active": true
+                    "totalPoints": 429,
+                    "active": false
                 },
                 {
                     "nickname": "Terrell",
@@ -306,8 +306,8 @@
                     "yearsPro": "13",
                     "collegeName": "Villanova",
                     "teamName": "Toronto Raptors",
-                    "totalPoints": 219,
-                    "active": true
+                    "totalPoints": 358,
+                    "active": false
                 },
                 {
                     "nickname": "Zupac",
@@ -319,7 +319,7 @@
                     "yearsPro": "3",
                     "collegeName": " ",
                     "teamName": "LA Clippers",
-                    "totalPoints": 133,
+                    "totalPoints": 206,
                     "active": true
                 },
                 {
@@ -332,7 +332,7 @@
                     "yearsPro": "8",
                     "collegeName": "Boston College",
                     "teamName": "LA Clippers",
-                    "totalPoints": 88,
+                    "totalPoints": 94,
                     "active": true
                 },
                 {
@@ -354,19 +354,6 @@
             "name": "Shane",
             "roster": [
                 {
-                    "nickname": "Spicy P",
-                    "personId": "1627783",
-                    "firstName": "Pascal",
-                    "lastName": "Siakam",
-                    "jersey": "43",
-                    "pos": "F",
-                    "yearsPro": "3",
-                    "collegeName": "New Mexico State",
-                    "teamName": "Toronto Raptors",
-                    "totalPoints": 220,
-                    "active": true
-                },
-                {
                     "nickname": "Batman - Playoff P",
                     "personId": "202331",
                     "firstName": "Paul",
@@ -376,7 +363,33 @@
                     "yearsPro": "9",
                     "collegeName": "Fresno State",
                     "teamName": "LA Clippers",
-                    "totalPoints": 214,
+                    "totalPoints": 351,
+                    "active": true
+                },
+                {
+                    "nickname": "Spicy P",
+                    "personId": "1627783",
+                    "firstName": "Pascal",
+                    "lastName": "Siakam",
+                    "jersey": "43",
+                    "pos": "F",
+                    "yearsPro": "3",
+                    "collegeName": "New Mexico State",
+                    "teamName": "Toronto Raptors",
+                    "totalPoints": 328,
+                    "active": false
+                },
+                {
+                    "nickname": "MPJ",
+                    "personId": "1629008",
+                    "firstName": "Michael",
+                    "lastName": "Porter Jr.",
+                    "jersey": "1",
+                    "pos": "F",
+                    "yearsPro": "0",
+                    "collegeName": "Missouri",
+                    "teamName": "Denver Nuggets",
+                    "totalPoints": 246,
                     "active": true
                 },
                 {
@@ -389,20 +402,7 @@
                     "yearsPro": "8",
                     "collegeName": "Kansas",
                     "teamName": "LA Clippers",
-                    "totalPoints": 159,
-                    "active": true
-                },
-                {
-                    "nickname": "MPJ",
-                    "personId": "1629008",
-                    "firstName": "Michael",
-                    "lastName": "Porter Jr.",
-                    "jersey": "1",
-                    "pos": "F",
-                    "yearsPro": "0",
-                    "collegeName": "Missouri",
-                    "teamName": "Denver Nuggets",
-                    "totalPoints": 157,
+                    "totalPoints": 226,
                     "active": true
                 },
                 {
@@ -415,7 +415,7 @@
                     "yearsPro": "1",
                     "collegeName": "Michigan",
                     "teamName": "Miami Heat",
-                    "totalPoints": 109,
+                    "totalPoints": 141,
                     "active": true
                 }
             ]
@@ -433,8 +433,8 @@
                     "yearsPro": "7",
                     "collegeName": "Texas A&M",
                     "teamName": "Milwaukee Bucks",
-                    "totalPoints": 254,
-                    "active": true
+                    "totalPoints": 345,
+                    "active": false
                 },
                 {
                     "nickname": "The Menace",
@@ -450,6 +450,19 @@
                     "active": false
                 },
                 {
+                    "nickname": "Trez",
+                    "personId": "1626149",
+                    "firstName": "Montrezl",
+                    "lastName": "Harrell",
+                    "jersey": "5",
+                    "pos": "F-C",
+                    "yearsPro": "4",
+                    "collegeName": "Louisville",
+                    "teamName": "LA Clippers",
+                    "totalPoints": 161,
+                    "active": true
+                },
+                {
                     "nickname": "*watch emoji*",
                     "personId": "203081",
                     "firstName": "Damian",
@@ -461,19 +474,6 @@
                     "teamName": "Portland Trail Blazers",
                     "totalPoints": 131,
                     "active": false
-                },
-                {
-                    "nickname": "Trez",
-                    "personId": "1626149",
-                    "firstName": "Montrezl",
-                    "lastName": "Harrell",
-                    "jersey": "5",
-                    "pos": "F-C",
-                    "yearsPro": "4",
-                    "collegeName": "Louisville",
-                    "teamName": "LA Clippers",
-                    "totalPoints": 103,
-                    "active": true
                 },
                 {
                     "nickname": "Daniel",
@@ -503,7 +503,20 @@
                     "yearsPro": "10",
                     "collegeName": "Arizona State",
                     "teamName": "Houston Rockets",
-                    "totalPoints": 370,
+                    "totalPoints": 542,
+                    "active": false
+                },
+                {
+                    "nickname": "Old Man",
+                    "personId": "1627759",
+                    "firstName": "Jaylen",
+                    "lastName": "Brown",
+                    "jersey": "7",
+                    "pos": "G-F",
+                    "yearsPro": "3",
+                    "collegeName": "California",
+                    "teamName": "Boston Celtics",
+                    "totalPoints": 361,
                     "active": true
                 },
                 {
@@ -516,20 +529,7 @@
                     "yearsPro": "8",
                     "collegeName": "Connecticut",
                     "teamName": "Boston Celtics",
-                    "totalPoints": 234,
-                    "active": true
-                },
-                {
-                    "nickname": "Old Man",
-                    "personId": "1627759",
-                    "firstName": "Jaylen",
-                    "lastName": "Brown",
-                    "jersey": "7",
-                    "pos": "G-F",
-                    "yearsPro": "3",
-                    "collegeName": "California",
-                    "teamName": "Boston Celtics",
-                    "totalPoints": 218,
+                    "totalPoints": 336,
                     "active": true
                 },
                 {
@@ -542,7 +542,7 @@
                     "yearsPro": "14",
                     "collegeName": "No College",
                     "teamName": "LA Clippers",
-                    "totalPoints": 163,
+                    "totalPoints": 237,
                     "active": true
                 },
                 {
@@ -573,7 +573,7 @@
                     "yearsPro": "4",
                     "collegeName": " ",
                     "teamName": "Denver Nuggets",
-                    "totalPoints": 308,
+                    "totalPoints": 500,
                     "active": true
                 },
                 {
@@ -586,8 +586,21 @@
                     "yearsPro": "6",
                     "collegeName": "Tennessee State",
                     "teamName": "Houston Rockets",
-                    "totalPoints": 190,
-                    "active": true
+                    "totalPoints": 253,
+                    "active": false
+                },
+                {
+                    "nickname": "Stormin Norman",
+                    "personId": "1626181",
+                    "firstName": "Norman",
+                    "lastName": "Powell",
+                    "jersey": "24",
+                    "pos": "G",
+                    "yearsPro": "4",
+                    "collegeName": "UCLA",
+                    "teamName": "Toronto Raptors",
+                    "totalPoints": 193,
+                    "active": false
                 },
                 {
                     "nickname": "Do-a-180",
@@ -603,19 +616,6 @@
                     "active": false
                 },
                 {
-                    "nickname": "Stormin Norman",
-                    "personId": "1626181",
-                    "firstName": "Norman",
-                    "lastName": "Powell",
-                    "jersey": "24",
-                    "pos": "G",
-                    "yearsPro": "4",
-                    "collegeName": "UCLA",
-                    "teamName": "Toronto Raptors",
-                    "totalPoints": 123,
-                    "active": true
-                },
-                {
                     "nickname": "The Michael Jordan of Deleware",
                     "personId": "1628978",
                     "firstName": "Donte",
@@ -625,14 +625,27 @@
                     "yearsPro": "1",
                     "collegeName": "Villanova",
                     "teamName": "Milwaukee Bucks",
-                    "totalPoints": 78,
-                    "active": true
+                    "totalPoints": 120,
+                    "active": false
                 }
             ]
         },
         {
             "name": "Cameron",
             "roster": [
+                {
+                    "nickname": "Taco Jay",
+                    "personId": "1628369",
+                    "firstName": "Jayson",
+                    "lastName": "Tatum",
+                    "jersey": "0",
+                    "pos": "F-G",
+                    "yearsPro": "2",
+                    "collegeName": "Duke",
+                    "teamName": "Boston Celtics",
+                    "totalPoints": 458,
+                    "active": true
+                },
                 {
                     "nickname": "Wannabe ROY",
                     "personId": "1628378",
@@ -647,17 +660,30 @@
                     "active": false
                 },
                 {
-                    "nickname": "Taco Jay",
-                    "personId": "1628369",
-                    "firstName": "Jayson",
-                    "lastName": "Tatum",
+                    "nickname": "LEEEROY JENKINS",
+                    "personId": "201566",
+                    "firstName": "Russell",
+                    "lastName": "Westbrook",
                     "jersey": "0",
-                    "pos": "F-G",
-                    "yearsPro": "2",
-                    "collegeName": "Duke",
-                    "teamName": "Boston Celtics",
-                    "totalPoints": 281,
-                    "active": true
+                    "pos": "G",
+                    "yearsPro": "11",
+                    "collegeName": "UCLA",
+                    "teamName": "Houston Rockets",
+                    "active": false,
+                    "totalPoints": 250
+                },
+                {
+                    "nickname": "Big Burrito",
+                    "personId": "201188",
+                    "firstName": "Marc",
+                    "lastName": "Gasol",
+                    "jersey": "33",
+                    "pos": "C",
+                    "yearsPro": "11",
+                    "collegeName": " ",
+                    "teamName": "Toronto Raptors",
+                    "totalPoints": 155,
+                    "active": false
                 },
                 {
                     "nickname": "Humble Moses",
@@ -671,32 +697,6 @@
                     "teamName": "Indiana Pacers",
                     "totalPoints": 147,
                     "active": false
-                },
-                {
-                    "nickname": "LEEEROY JENKINS",
-                    "personId": "201566",
-                    "firstName": "Russell",
-                    "lastName": "Westbrook",
-                    "jersey": "0",
-                    "pos": "G",
-                    "yearsPro": "11",
-                    "collegeName": "UCLA",
-                    "teamName": "Houston Rockets",
-                    "active": true,
-                    "totalPoints": 117
-                },
-                {
-                    "nickname": "Big Burrito",
-                    "personId": "201188",
-                    "firstName": "Marc",
-                    "lastName": "Gasol",
-                    "jersey": "33",
-                    "pos": "C",
-                    "yearsPro": "11",
-                    "collegeName": " ",
-                    "teamName": "Toronto Raptors",
-                    "totalPoints": 108,
-                    "active": true
                 }
             ]
         }

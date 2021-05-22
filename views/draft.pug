@@ -1,0 +1,10 @@
+extends layout.pug
+include mixins/_draftSelection
+
+block content
+  section.jumbotron.text-center
+    .container
+        h1 Welcome to the Draft
+    .container
+      .row
+        +draftSelection(players)

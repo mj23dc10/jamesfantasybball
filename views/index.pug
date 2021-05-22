@@ -6,7 +6,7 @@ block content
     .container
         h1 Updated : #{standings.lastUpdated}
   .album.py-5.bg-light
-    .container
+    .container-fluid
       .row
         each standing in standings.standings
           +standingsThumbCard(standing)

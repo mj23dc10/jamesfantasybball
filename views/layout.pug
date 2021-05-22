@@ -2,7 +2,8 @@ doctype html
 html
   head
     title James Fantasy Basketball : 2020 Bubble Edition
-    link(rel='stylesheet' href='https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css')
     style.
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -27,14 +28,14 @@ html
           font-size: 3.5rem;
         }
       }
-
+    script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js')
+    script(src='https://crlcu.github.io/multiselect/dist/js/multiselect.min.js')
   body
     include includes/header.pug
 
     main#main
-        block content
+      block content
 
     include includes/footer.pug
-    
-    script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js')
-    script(src='https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js')
+

@@ -44,6 +44,7 @@ app.get('/standings', async (req, res, next) => {
         res.send(JSON.stringify(JSON.parse(data), null, 4))
     })
 })
+
 //Run as 12 GMT which will be 08:00 ETC all games should be done and reported
 cron.schedule('0 12 * * *', async () => {
     await updateStandings(true)

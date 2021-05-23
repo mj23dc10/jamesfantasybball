@@ -2,16 +2,17 @@ mixin draftSelection(players)
     .col-5
         select#search.form-control(name='from[]' size='8' multiple='multiple')
             each player in players
-                option(value= player.personId) #{player.temporaryDisplayName}
+                if player.temporaryDisplayName
+                    option(value= player.personId) #{player.temporaryDisplayName}
     .d-grid.gap-2.col-2.mx-aut
-        button#search_rightAll.btn.btn-primary(type='button')
-            i.bi.bi-forward-fill
-        button#search_rightSelected.btn.btn-primary(type='button')
-            i.glyphicon.glyphicon-chevron-right
-        button#search_leftSelected.btn.btn-primary(type='button')
-            i.glyphicon.glyphicon-chevron-left
-        button#search_leftAll.btn.btn-primary(type='button')
-            i.glyphicon.glyphicon-backward
+        button#search_rightAll.btn.btn-secondary(type='button')
+            i.bi.bi-chevron-double-right
+        button#search_rightSelected.btn.btn-secondary(type='button')
+            i.bi.bi-chevron-right
+        button#search_leftSelected.btn.btn-secondary(type='button')
+            i.bi.bi-chevron-left
+        button#search_leftAll.btn.btn-secondary(type='button')
+            i.bi.bi-chevron-double-left
     .col-5
         select#search_to.form-control(name='to[]' size='8' multiple='multiple')
     script(type='text/javascript').

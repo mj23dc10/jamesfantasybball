@@ -3,20 +3,17 @@ header
     .container
       .row
         .col-sm-8.col-md-7.py-4
-          h4.text-white James FBB Rules
+          h4.text-white FBB Rules
           p.text-muted 1. Snake draft picked at random.
           p.text-muted 2. Points, Rebounds, Assists, Steals, Blocks = 1 point
           p.text-muted 3. $10 buy in
-        .col-sm-4.offset-md-1.py-4
-          h4.text-white Contact
-          ul.list-unstyled
-            li
-              a.text-white(href='https://twitter.com/mj23dc10') Twitter
-  nav.navbar.navbar-dark.bg-dark.shadow-sm
-    .container.d-flex.justify-content-between
-      a.navbar-brand.d-flex.align-items-center(href='/')
-        strong Playoff Fantasy Basketball League
-      a.navbar-brand.d-flex.align-items-center(href='/draft')
-        strong Draft
-      button.navbar-toggler.collapsed&attributes({'data-toggle': 'collapse'}, {'data-target': '#navbarHeader'})
-        span.navbar-toggler-icon
+  nav.navbar.navbar-expand-sm.navbar-dark.bg-dark.shadow-sm
+    .container-fluid
+      a.navbar-brand(href='/')
+        strong Fantasy Basketball League: 2021
+      collapse.navbar-collapse
+        .navbar-nav
+          a.nav-link.active(href='/') Standings
+          a.nav-link(href='/draft') Draft (Coming Soon)
+          button.navbar-toggler.collapsed&attributes({'data-bs-toggle': 'collapse'}, {'data-bs-target': '#navbarHeader'})
+            span.navbar-toggler-icon

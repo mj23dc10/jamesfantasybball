@@ -5,45 +5,231 @@
             "name": "Bill",
             "roster": [
                 {
-                    "firstName": "Lebron"
+                    "personId": "2544"
+                },
+                {
+                    "personId": "203552"
+                },
+                {
+                    "personId": "1629029"
+                },
+                {
+                    "personId": "201145"
+                },
+                {
+                    "personId": "202694"
+                },
+                {
+                    "personId": "203115"
                 }
             ]
         },
         {
             "name": "Darcy",
-            "roster": []
+            "roster": [
+                {
+                    "personId": "201142"
+                },
+                {
+                    "personId": "203497"
+                },
+                {
+                    "personId": "101108"
+                },
+                {
+                    "personId": "1628389"
+                },
+                {
+                    "personId": "1629628"
+                },
+                {
+                    "personId": "201599"
+                }
+            ]
         },
         {
             "name": "Kevin M",
-            "roster": []
+            "roster": [
+                {
+                    "personId": "203954"
+                },
+                {
+                    "personId": "202710"
+                },
+                {
+                    "personId": "1629027"
+                },
+                {
+                    "personId": "201566"
+                },
+                {
+                    "personId": "1629630"
+                },
+                {
+                    "personId": "200765"
+                }
+            ]
         },
         {
             "name": "Pat",
-            "roster": []
+            "roster": [
+                {
+                    "personId": "201935"
+                },
+                {
+                    "personId": "1626164"
+                },
+                {
+                    "personId": "201950"
+                },
+                {
+                    "personId": "1628398"
+                },
+                {
+                    "personId": "201586"
+                },
+                {
+                    "personId": "201980"
+                }
+            ]
         },
         {
             "name": "Shane",
-            "roster": []
+            "roster": [
+                {
+                    "personId": "202695"
+                },
+                {
+                    "personId": "203081"
+                },
+                {
+                    "personId": "201144"
+                },
+                {
+                    "personId": "204060"
+                },
+                {
+                    "personId": "1628381"
+                },
+                {
+                    "personId": "1628971"
+                }
+            ]
         },
         {
             "name": "Greg",
-            "roster": []
+            "roster": [
+                {
+                    "personId": "203507"
+                },
+                {
+                    "personId": "203999"
+                },
+                {
+                    "personId": "1629008"
+                },
+                {
+                    "personId": "1629028"
+                },
+                {
+                    "personId": "1628969"
+                },
+                {
+                    "personId": "1627826"
+                }
+            ]
         },
         {
             "name": "Kevin P",
-            "roster": []
+            "roster": [
+                {
+                    "personId": "202331"
+                },
+                {
+                    "personId": "1628378"
+                },
+                {
+                    "personId": "203903"
+                },
+                {
+                    "personId": "201572"
+                },
+                {
+                    "personId": "1626171"
+                },
+                {
+                    "personId": "203991"
+                }
+            ]
         },
         {
             "name": "Mike",
-            "roster": []
+            "roster": [
+                {
+                    "personId": "203076"
+                },
+                {
+                    "personId": "203114"
+                },
+                {
+                    "personId": "203944"
+                },
+                {
+                    "personId": "203992"
+                },
+                {
+                    "personId": "203083"
+                },
+                {
+                    "personId": "1629003"
+                }
+            ]
         },
         {
             "name": "Cameron",
-            "roster": []
+            "roster": [
+                {
+                    "personId": "202681"
+                },
+                {
+                    "personId": "1628369"
+                },
+                {
+                    "personId": "203468"
+                },
+                {
+                    "personId": "201933"
+                },
+                {
+                    "personId": "204001"
+                },
+                {
+                    "personId": "203994"
+                }
+            ]
         },
         {
             "name": "Steve",
-            "roster": []
+            "roster": [
+                {
+                    "personId": "1627732"
+                },
+                {
+                    "personId": "202699"
+                },
+                {
+                    "personId": "203471"
+                },
+                {
+                    "personId": "203925"
+                },
+                {
+                    "personId": "1628978"
+                },
+                {
+                    "personId": "201565"
+                }
+            ]
         }
     ]
 }

@@ -105,15 +105,14 @@ const getCurrentStandingsByDate = async (date, rosterFile, standingFile) => {
                 let activePlayers = team.roster.filter((p) => p.active).length
                 if (teamStanding) {
                     teamStanding.points += totalTeamPoints
-                    teamStanding[date + '_points'] = totalTeamPoints
+                    teamStanding.pointsHistory.push({ date: date, points: totalTeamPoints })
                     teamStanding.mvp = mvp[0].firstName + ' "' + mvp[0].nickname + '" ' + mvp[0].lastName + ' - ' + mvp[0].totalPoints
                     teamStanding.playersLeft = activePlayers
                 } else {
                     currentStandings.standings.push({
                         name: team.name,
                         points: totalTeamPoints,
-                        //"gamesLeft": MAX_GAMES - gamesPlayed,
-                        [date + '_points']: totalTeamPoints,
+                        pointsHistory: [{ date: date, points: totalTeamPoints }],
                         mvp: mvp[0].firstName + ' "' + mvp[0].nickname + '" ' + mvp[0].lastName + ' - ' + mvp[0].totalPoints,
                         playersLeft: activePlayers,
                     })

@@ -3,9 +3,352 @@
     "processedGames": [
         "0042000121",
         "0042000171",
-        "0042000111"
+        "0042000111",
+        "0042000161"
     ],
     "standings": [
+        {
+            "name": "Cameron",
+            "points": 164,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 164
+                }
+            ],
+            "playersLeft": 6,
+            "playerPointsHistory": [
+                {
+                    "personId": "202681",
+                    "totalPoints": 37,
+                    "firstName": "Kyrie",
+                    "lastName": "Irving",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 37
+                        }
+                    ]
+                },
+                {
+                    "personId": "203994",
+                    "totalPoints": 34,
+                    "firstName": "Jusuf",
+                    "lastName": "Nurkic",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 34
+                        }
+                    ]
+                },
+                {
+                    "personId": "1628369",
+                    "totalPoints": 32,
+                    "firstName": "Jayson",
+                    "lastName": "Tatum",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 32
+                        }
+                    ]
+                },
+                {
+                    "personId": "203468",
+                    "totalPoints": 31,
+                    "firstName": "CJ",
+                    "lastName": "McCollum",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 31
+                        }
+                    ]
+                },
+                {
+                    "personId": "204001",
+                    "totalPoints": 20,
+                    "firstName": "Kristaps",
+                    "lastName": "Porzingis",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 20
+                        }
+                    ]
+                },
+                {
+                    "personId": "201933",
+                    "totalPoints": 10,
+                    "firstName": "Blake",
+                    "lastName": "Griffin",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 10
+                        }
+                    ]
+                }
+            ],
+            "mvp": "Kyrie Irving : 37",
+            "standing": 1
+        },
+        {
+            "name": "Greg",
+            "points": 150,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 150
+                }
+            ],
+            "playersLeft": 6,
+            "playerPointsHistory": [
+                {
+                    "personId": "203507",
+                    "totalPoints": 52,
+                    "firstName": "Giannis",
+                    "lastName": "Antetokounmpo",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 52
+                        }
+                    ]
+                },
+                {
+                    "personId": "203999",
+                    "totalPoints": 51,
+                    "firstName": "Nikola",
+                    "lastName": "Jokic",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 51
+                        }
+                    ]
+                },
+                {
+                    "personId": "1629008",
+                    "totalPoints": 36,
+                    "firstName": "Michael",
+                    "lastName": "Porter Jr.",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 36
+                        }
+                    ]
+                },
+                {
+                    "personId": "1627826",
+                    "totalPoints": 11,
+                    "firstName": "Ivica",
+                    "lastName": "Zubac",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 11
+                        }
+                    ]
+                }
+            ],
+            "mvp": "Giannis Antetokounmpo : 52",
+            "standing": 2
+        },
+        {
+            "name": "Shane",
+            "points": 102,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 102
+                }
+            ],
+            "playersLeft": 6,
+            "playerPointsHistory": [
+                {
+                    "personId": "203081",
+                    "totalPoints": 49,
+                    "firstName": "Damian",
+                    "lastName": "Lillard",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 49
+                        }
+                    ]
+                },
+                {
+                    "personId": "202695",
+                    "totalPoints": 45,
+                    "firstName": "Kawhi",
+                    "lastName": "Leonard",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 45
+                        }
+                    ]
+                },
+                {
+                    "personId": "1628971",
+                    "totalPoints": 8,
+                    "firstName": "Bruce",
+                    "lastName": "Brown",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 8
+                        }
+                    ]
+                }
+            ],
+            "mvp": "Damian Lillard : 49",
+            "standing": 3
+        },
+        {
+            "name": "Pat",
+            "points": 97,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 97
+                }
+            ],
+            "playersLeft": 6,
+            "playerPointsHistory": [
+                {
+                    "personId": "201935",
+                    "totalPoints": 43,
+                    "firstName": "James",
+                    "lastName": "Harden",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 43
+                        }
+                    ]
+                },
+                {
+                    "personId": "201950",
+                    "totalPoints": 37,
+                    "firstName": "Jrue",
+                    "lastName": "Holiday",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 37
+                        }
+                    ]
+                },
+                {
+                    "personId": "201586",
+                    "totalPoints": 17,
+                    "firstName": "Serge",
+                    "lastName": "Ibaka",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 17
+                        }
+                    ]
+                }
+            ],
+            "mvp": "James Harden : 43",
+            "standing": 4
+        },
+        {
+            "name": "Darcy",
+            "points": 76,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 76
+                }
+            ],
+            "playersLeft": 6,
+            "playerPointsHistory": [
+                {
+                    "personId": "201142",
+                    "totalPoints": 47,
+                    "firstName": "Kevin",
+                    "lastName": "Durant",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 47
+                        }
+                    ]
+                },
+                {
+                    "personId": "1628389",
+                    "totalPoints": 29,
+                    "firstName": "Bam",
+                    "lastName": "Adebayo",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 29
+                        }
+                    ]
+                }
+            ],
+            "mvp": "Kevin Durant : 47",
+            "standing": 5
+        },
+        {
+            "name": "Bill",
+            "points": 75,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 75
+                }
+            ],
+            "playersLeft": 6,
+            "playerPointsHistory": [
+                {
+                    "personId": "1629029",
+                    "totalPoints": 55,
+                    "firstName": "Luka",
+                    "lastName": "Doncic",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 55
+                        }
+                    ]
+                },
+                {
+                    "personId": "201145",
+                    "totalPoints": 11,
+                    "firstName": "Jeff",
+                    "lastName": "Green",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 11
+                        }
+                    ]
+                },
+                {
+                    "personId": "202694",
+                    "totalPoints": 9,
+                    "firstName": "Marcus",
+                    "lastName": "Morris Sr.",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 9
+                        }
+                    ]
+                }
+            ],
+            "mvp": "Luka Doncic : 55",
+            "standing": 6
+        },
         {
             "name": "Kevin P",
             "points": 75,
@@ -15,61 +358,47 @@
                     "points": 75
                 }
             ],
-            "mvp": "Paul \"undefined\" George - 140",
-            "playersLeft": 0,
-            "standing": 1
-        },
-        {
-            "name": "Pat",
-            "points": 74,
-            "pointsHistory": [
+            "playersLeft": 6,
+            "playerPointsHistory": [
                 {
-                    "date": "20210522",
-                    "points": 74
+                    "personId": "202331",
+                    "totalPoints": 35,
+                    "firstName": "Paul",
+                    "lastName": "George",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 35
+                        }
+                    ]
+                },
+                {
+                    "personId": "201572",
+                    "totalPoints": 27,
+                    "firstName": "Brook",
+                    "lastName": "Lopez",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 27
+                        }
+                    ]
+                },
+                {
+                    "personId": "1626171",
+                    "totalPoints": 13,
+                    "firstName": "Bobby",
+                    "lastName": "Portis",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 13
+                        }
+                    ]
                 }
             ],
-            "mvp": "James \"undefined\" Harden - 80",
-            "playersLeft": 0,
-            "standing": 2
-        },
-        {
-            "name": "Bill",
-            "points": 67,
-            "pointsHistory": [
-                {
-                    "date": "20210522",
-                    "points": 67
-                }
-            ],
-            "mvp": "LeBron \"undefined\" James - undefined",
-            "playersLeft": 0,
-            "standing": 3
-        },
-        {
-            "name": "Greg",
-            "points": 63,
-            "pointsHistory": [
-                {
-                    "date": "20210522",
-                    "points": 63
-                }
-            ],
-            "mvp": "Giannis \"undefined\" Antetokounmpo - 208",
-            "playersLeft": 0,
-            "standing": 4
-        },
-        {
-            "name": "Cameron",
-            "points": 63,
-            "pointsHistory": [
-                {
-                    "date": "20210522",
-                    "points": 63
-                }
-            ],
-            "mvp": "Jayson \"undefined\" Tatum - 84",
-            "playersLeft": 0,
-            "standing": 5
+            "mvp": "Paul George : 35",
+            "standing": 7
         },
         {
             "name": "Kevin M",
@@ -80,34 +409,34 @@
                     "points": 59
                 }
             ],
-            "mvp": "Joel \"undefined\" Embiid - undefined",
-            "playersLeft": 0,
-            "standing": 6
-        },
-        {
-            "name": "Darcy",
-            "points": 53,
-            "pointsHistory": [
+            "playersLeft": 6,
+            "playerPointsHistory": [
                 {
-                    "date": "20210522",
-                    "points": 53
+                    "personId": "202710",
+                    "totalPoints": 38,
+                    "firstName": "Jimmy",
+                    "lastName": "Butler",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 38
+                        }
+                    ]
+                },
+                {
+                    "personId": "200765",
+                    "totalPoints": 21,
+                    "firstName": "Rajon",
+                    "lastName": "Rondo",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 21
+                        }
+                    ]
                 }
             ],
-            "mvp": "Kevin \"undefined\" Durant - 87",
-            "playersLeft": 0,
-            "standing": 7
-        },
-        {
-            "name": "Shane",
-            "points": 51,
-            "pointsHistory": [
-                {
-                    "date": "20210522",
-                    "points": 51
-                }
-            ],
-            "mvp": "Kawhi \"undefined\" Leonard - 180",
-            "playersLeft": 0,
+            "mvp": "Jimmy Butler : 38",
             "standing": 8
         },
         {
@@ -119,21 +448,61 @@
                     "points": 41
                 }
             ],
-            "mvp": "Anthony \"undefined\" Davis - undefined",
-            "playersLeft": 0,
+            "playersLeft": 6,
+            "playerPointsHistory": [
+                {
+                    "personId": "203114",
+                    "totalPoints": 41,
+                    "firstName": "Khris",
+                    "lastName": "Middleton",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 41
+                        }
+                    ]
+                }
+            ],
+            "mvp": "Khris Middleton : 41",
             "standing": 9
         },
         {
             "name": "Steve",
-            "points": 27,
+            "points": 32,
             "pointsHistory": [
                 {
                     "date": "20210522",
-                    "points": 27
+                    "points": 32
                 }
             ],
-            "mvp": "Ben \"undefined\" Simmons - undefined",
-            "playersLeft": 0,
+            "playersLeft": 6,
+            "playerPointsHistory": [
+                {
+                    "personId": "1628978",
+                    "totalPoints": 19,
+                    "firstName": "Donte",
+                    "lastName": "DiVincenzo",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 19
+                        }
+                    ]
+                },
+                {
+                    "personId": "203925",
+                    "totalPoints": 13,
+                    "firstName": "Joe",
+                    "lastName": "Harris",
+                    "pointsHistory": [
+                        {
+                            "date": "20210522",
+                            "points": 13
+                        }
+                    ]
+                }
+            ],
+            "mvp": "Donte DiVincenzo : 19",
             "standing": 10
         }
     ]

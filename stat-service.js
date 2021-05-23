@@ -3,6 +3,10 @@ const moment = require('moment')
 const twitter = require('./twitter-service')
 const dataService = require('nba.js').data
 const GAME_KEY_PREFIX = 'game_'
+const rosterFile = 'store/playoff-roster.json'
+const standingsFile = 'store/playoff-standings.json'
+let _globalRoster
+let _globalStandings
 const getGameIdsByDate = async (date) => {
     let gameIds = []
     const data = await dataService.scoreboard({ date: date }).catch((err) => {
@@ -28,7 +32,7 @@ const _getPlayerStatsByDateAndGameIds = async (date, gameIds) => {
         const boxscoreData = await dataService.boxscore({ date: date, gameId: gameId }).catch((err) => {
             console.error(err)
         })
-        if (boxscoreData.stats) {
+        if (boxscoreData.stats && !boxscoreData.basicGameData.isGameActivated) {
             boxscoreData.stats.activePlayers.forEach((player) => {
                 playerMap.set(player.personId, parseInt(player.points, 10) + parseInt(player.totReb, 10) + parseInt(player.assists, 10) + parseInt(player.steals, 10) + parseInt(player.blocks, 10))
             })
@@ -37,10 +41,15 @@ const _getPlayerStatsByDateAndGameIds = async (date, gameIds) => {
     }
     return playerMap
 }
-
-const getCurrentStandingsByDate = async (date, rosterFile, standingFile) => {
-    let jamesLeague = JSON.parse(fs.readFileSync(rosterFile, 'utf8'))
-    let currentStandings = JSON.parse(fs.readFileSync(standingFile, 'utf8'))
+const _getRoster = () => {
+    return (_globalRoster = _globalRoster || JSON.parse(fs.readFileSync(rosterFile, 'utf8')))
+}
+const _getStandings = () => {
+    return (_globalStandings = _globalStandings || JSON.parse(fs.readFileSync(standingsFile, 'utf8')))
+}
+const getCurrentStandingsByDate = async (date) => {
+    let jamesLeague = _getRoster()
+    let currentStandings = _getStandings()
     //Check do we have standings up to this date
     const searchDate = moment(date, 'YYYYMMDD')
     const lastUpdate = moment(currentStandings.lastUpdated, 'YYYYMMDD')
@@ -59,34 +68,54 @@ const getCurrentStandingsByDate = async (date, rosterFile, standingFile) => {
             teams.forEach((team) => {
                 let teamStanding = currentStandings.standings.find((o) => o.name === team.name)
                 var totalTeamPoints = 0
+                var playerPointsHistory = teamStanding ? teamStanding.playerPointsHistory : []
                 team.roster.forEach(async (player) => {
                     let points = playerStats.get(player.personId)
+                    let playerPoints = playerPointsHistory.find((o) => o.personId === player.personId)
                     if (points) {
                         totalTeamPoints += points
-                        if (player.totalPoints) {
-                            player.totalPoints += points
+                        if (playerPoints) {
+                            playerPoints.totalPoints += points
+                            playerPoints.pointsHistory.push({ date: date, points: points })
                         } else {
-                            player['totalPoints'] = points
+                            playerPointsHistory.push({
+                                personId: player.personId,
+                                totalPoints: points,
+                                firstName: player.firstName,
+                                lastName: player.lastName,
+                                pointsHistory: [{ date: date, points: points }],
+                            })
                         }
                     }
                 })
-                let mvp = team.roster.sort(function (a, b) {
-                    return b.totalPoints - a.totalPoints
-                })
+
                 let activePlayers = team.roster.filter((p) => p.active).length
                 if (teamStanding) {
                     teamStanding.points += totalTeamPoints
-                    teamStanding.pointsHistory.push({ date: date, points: totalTeamPoints })
-                    teamStanding.mvp = mvp[0].firstName + ' "' + mvp[0].nickname + '" ' + mvp[0].lastName + ' - ' + mvp[0].totalPoints
                     teamStanding.playersLeft = activePlayers
+                    let ph = teamStanding.pointsHistory.find((o) => o.date === date)
+                    if (ph) {
+                        ph.points += totalTeamPoints
+                    } else {
+                        teamStanding.pointsHistory.push({ date: date, points: totalTeamPoints })
+                    }
+                    teamStanding.playerPointsHistory = playerPointsHistory
                 } else {
-                    currentStandings.standings.push({
+                    teamStanding = {
                         name: team.name,
                         points: totalTeamPoints,
                         pointsHistory: [{ date: date, points: totalTeamPoints }],
-                        mvp: mvp[0].firstName + ' "' + mvp[0].nickname + '" ' + mvp[0].lastName + ' - ' + mvp[0].totalPoints,
                         playersLeft: activePlayers,
-                    })
+                        playerPointsHistory: playerPointsHistory,
+                    }
+                    currentStandings.standings.push(teamStanding)
+                }
+                //Set the MVP
+                let mvp = teamStanding.playerPointsHistory.sort(function (a, b) {
+                    return b.totalPoints - a.totalPoints
+                })
+                if (mvp) {
+                    teamStanding.mvp = mvp[0].firstName + ' ' + mvp[0].lastName + ' : ' + mvp[0].totalPoints
                 }
             })
             //Sort the current standings
@@ -107,7 +136,9 @@ const getCurrentStandingsByDate = async (date, rosterFile, standingFile) => {
             //Write the updates standings to disk and save
             try {
                 fs.writeFileSync(rosterFile, JSON.stringify(jamesLeague, null, 4))
-                fs.writeFileSync(standingFile, JSON.stringify(currentStandings, null, 4))
+                fs.writeFileSync(standingsFile, JSON.stringify(currentStandings, null, 4))
+                _globalStandings = currentStandings
+                _globalRoster = jamesLeague
             } catch (err) {
                 console.error(err)
             }
@@ -154,10 +185,29 @@ const tweetStandings = async (standingFile) => {
     })
 }
 
+const getRosterInfo = (teamName) => {
+    let roster = []
+    let team = _getRoster().teams.find((o) => o.name === teamName)
+    team.roster.forEach((ros) => {
+        let newRoster = {}
+        let teamStandings = _getStandings().standings.find((o) => o.name === teamName)
+        let pointsHistory = teamStandings.playerPointsHistory.find((o) => o.personId === ros.personId)
+        Object.assign(newRoster, ros, pointsHistory)
+        roster.push(newRoster)
+    })
+    return { name: teamName, roster: roster }
+}
+
+const getStandingsInfo = () => {
+    return Object.assign({}, _getStandings())
+}
+
 updateRosterInfo()
 module.exports = {
     getCurrentStandingsByDate,
     getGameIdsByDate,
     getPlayers,
+    getRosterInfo,
+    getStandingsInfo,
     tweetStandings,
 }

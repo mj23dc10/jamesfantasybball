@@ -12,7 +12,8 @@
                     "pos": "F",
                     "yearsPro": "17",
                     "collegeName": "St. Vincent-St. Mary HS (OH)",
-                    "teamName": "Los Angeles Lakers"
+                    "teamName": "Los Angeles Lakers",
+                    "active": true
                 },
                 {
                     "personId": "203552",
@@ -22,7 +23,8 @@
                     "pos": "G",
                     "yearsPro": "6",
                     "collegeName": "Duke",
-                    "teamName": "Philadelphia 76ers"
+                    "teamName": "Philadelphia 76ers",
+                    "active": true
                 },
                 {
                     "personId": "1629029",
@@ -33,7 +35,7 @@
                     "yearsPro": "2",
                     "collegeName": "Real Madrid",
                     "teamName": "Dallas Mavericks",
-                    "totalPoints": 220
+                    "active": true
                 },
                 {
                     "personId": "202694",
@@ -44,7 +46,7 @@
                     "yearsPro": "9",
                     "collegeName": "Kansas",
                     "teamName": "LA Clippers",
-                    "totalPoints": 36
+                    "active": true
                 },
                 {
                     "personId": "201145",
@@ -55,7 +57,7 @@
                     "yearsPro": "12",
                     "collegeName": "Georgetown",
                     "teamName": "Brooklyn Nets",
-                    "totalPoints": 12
+                    "active": true
                 },
                 {
                     "personId": "203115",
@@ -65,9 +67,11 @@
                     "pos": "G",
                     "yearsPro": "8",
                     "collegeName": "Memphis",
-                    "teamName": "Denver Nuggets"
+                    "teamName": "Denver Nuggets",
+                    "active": true
                 }
-            ]
+            ],
+            "active": true
         },
         {
             "name": "Darcy",
@@ -81,7 +85,7 @@
                     "yearsPro": "12",
                     "collegeName": "Texas-Austin",
                     "teamName": "Brooklyn Nets",
-                    "totalPoints": 87
+                    "active": true
                 },
                 {
                     "personId": "203497",
@@ -91,7 +95,8 @@
                     "pos": "C",
                     "yearsPro": "7",
                     "collegeName": "Cholet",
-                    "teamName": "Utah Jazz"
+                    "teamName": "Utah Jazz",
+                    "active": true
                 },
                 {
                     "personId": "101108",
@@ -101,7 +106,8 @@
                     "pos": "G",
                     "yearsPro": "15",
                     "collegeName": "Wake Forest",
-                    "teamName": "Phoenix Suns"
+                    "teamName": "Phoenix Suns",
+                    "active": true
                 },
                 {
                     "personId": "1628389",
@@ -112,7 +118,7 @@
                     "yearsPro": "3",
                     "collegeName": "Kentucky",
                     "teamName": "Miami Heat",
-                    "totalPoints": 116
+                    "active": true
                 },
                 {
                     "personId": "1629628",
@@ -122,7 +128,8 @@
                     "pos": "F-G",
                     "yearsPro": "1",
                     "collegeName": "Duke",
-                    "teamName": "New York Knicks"
+                    "teamName": "New York Knicks",
+                    "active": true
                 },
                 {
                     "personId": "201599",
@@ -132,7 +139,8 @@
                     "pos": "C",
                     "yearsPro": "12",
                     "collegeName": "Texas A&M",
-                    "teamName": "Brooklyn Nets"
+                    "teamName": "Brooklyn Nets",
+                    "active": true
                 }
             ]
         },
@@ -147,7 +155,8 @@
                     "pos": "C-F",
                     "yearsPro": "4",
                     "collegeName": "Kansas",
-                    "teamName": "Philadelphia 76ers"
+                    "teamName": "Philadelphia 76ers",
+                    "active": true
                 },
                 {
                     "personId": "202710",
@@ -158,7 +167,7 @@
                     "yearsPro": "9",
                     "collegeName": "Marquette",
                     "teamName": "Miami Heat",
-                    "totalPoints": 152
+                    "active": true
                 },
                 {
                     "personId": "1629027",
@@ -168,7 +177,8 @@
                     "pos": "G",
                     "yearsPro": "2",
                     "collegeName": "Oklahoma",
-                    "teamName": "Atlanta Hawks"
+                    "teamName": "Atlanta Hawks",
+                    "active": true
                 },
                 {
                     "personId": "201566",
@@ -178,7 +188,8 @@
                     "pos": "G",
                     "yearsPro": "12",
                     "collegeName": "UCLA",
-                    "teamName": "Washington Wizards"
+                    "teamName": "Washington Wizards",
+                    "active": true
                 },
                 {
                     "personId": "1629630",
@@ -189,7 +200,7 @@
                     "yearsPro": "1",
                     "collegeName": "Murray State",
                     "teamName": "Memphis Grizzlies",
-                    "totalPoints": 204
+                    "active": true
                 },
                 {
                     "personId": "200765",
@@ -200,7 +211,7 @@
                     "yearsPro": "14",
                     "collegeName": "Kentucky",
                     "teamName": "LA Clippers",
-                    "totalPoints": 84
+                    "active": true
                 }
             ]
         },
@@ -216,7 +227,7 @@
                     "yearsPro": "11",
                     "collegeName": "Arizona State",
                     "teamName": "Brooklyn Nets",
-                    "totalPoints": 80
+                    "active": true
                 },
                 {
                     "personId": "1626164",
@@ -226,7 +237,8 @@
                     "pos": "G",
                     "yearsPro": "5",
                     "collegeName": "Kentucky",
-                    "teamName": "Phoenix Suns"
+                    "teamName": "Phoenix Suns",
+                    "active": true
                 },
                 {
                     "personId": "201950",
@@ -237,7 +249,7 @@
                     "yearsPro": "11",
                     "collegeName": "UCLA",
                     "teamName": "Milwaukee Bucks",
-                    "totalPoints": 148
+                    "active": true
                 },
                 {
                     "personId": "1628398",
@@ -247,7 +259,8 @@
                     "pos": "F",
                     "yearsPro": "3",
                     "collegeName": "Utah",
-                    "teamName": "Los Angeles Lakers"
+                    "teamName": "Los Angeles Lakers",
+                    "active": true
                 },
                 {
                     "personId": "201586",
@@ -258,7 +271,7 @@
                     "yearsPro": "11",
                     "collegeName": "Ricoh Manresa",
                     "teamName": "LA Clippers",
-                    "totalPoints": 68
+                    "active": true
                 },
                 {
                     "personId": "201980",
@@ -268,7 +281,8 @@
                     "pos": "G",
                     "yearsPro": "11",
                     "collegeName": "North Carolina",
-                    "teamName": "Philadelphia 76ers"
+                    "teamName": "Philadelphia 76ers",
+                    "active": true
                 }
             ]
         },
@@ -284,7 +298,7 @@
                     "yearsPro": "9",
                     "collegeName": "San Diego State",
                     "teamName": "LA Clippers",
-                    "totalPoints": 180
+                    "active": true
                 },
                 {
                     "personId": "203081",
@@ -294,7 +308,8 @@
                     "pos": "G",
                     "yearsPro": "8",
                     "collegeName": "Weber State",
-                    "teamName": "Portland Trail Blazers"
+                    "teamName": "Portland Trail Blazers",
+                    "active": true
                 },
                 {
                     "personId": "201144",
@@ -304,7 +319,8 @@
                     "pos": "G",
                     "yearsPro": "13",
                     "collegeName": "Ohio State",
-                    "teamName": "Utah Jazz"
+                    "teamName": "Utah Jazz",
+                    "active": true
                 },
                 {
                     "personId": "204060",
@@ -314,7 +330,8 @@
                     "pos": "F-G",
                     "yearsPro": "6",
                     "collegeName": "Maccabi Tel Aviv",
-                    "teamName": "Utah Jazz"
+                    "teamName": "Utah Jazz",
+                    "active": true
                 },
                 {
                     "personId": "1628381",
@@ -324,7 +341,8 @@
                     "pos": "F-C",
                     "yearsPro": "3",
                     "collegeName": "Wake Forest",
-                    "teamName": "Atlanta Hawks"
+                    "teamName": "Atlanta Hawks",
+                    "active": true
                 },
                 {
                     "personId": "1628971",
@@ -335,7 +353,7 @@
                     "yearsPro": "2",
                     "collegeName": "Miami",
                     "teamName": "Brooklyn Nets",
-                    "totalPoints": 21
+                    "active": true
                 }
             ]
         },
@@ -351,7 +369,7 @@
                     "yearsPro": "7",
                     "collegeName": "Filathlitikos",
                     "teamName": "Milwaukee Bucks",
-                    "totalPoints": 208
+                    "active": true
                 },
                 {
                     "personId": "203999",
@@ -361,7 +379,8 @@
                     "pos": "C",
                     "yearsPro": "5",
                     "collegeName": "Mega Basket",
-                    "teamName": "Denver Nuggets"
+                    "teamName": "Denver Nuggets",
+                    "active": true
                 },
                 {
                     "personId": "1629008",
@@ -371,7 +390,8 @@
                     "pos": "F",
                     "yearsPro": "1",
                     "collegeName": "Missouri",
-                    "teamName": "Denver Nuggets"
+                    "teamName": "Denver Nuggets",
+                    "active": true
                 },
                 {
                     "personId": "1629028",
@@ -381,7 +401,8 @@
                     "pos": "C",
                     "yearsPro": "2",
                     "collegeName": "Arizona",
-                    "teamName": "Phoenix Suns"
+                    "teamName": "Phoenix Suns",
+                    "active": true
                 },
                 {
                     "personId": "1628969",
@@ -391,7 +412,8 @@
                     "pos": "F",
                     "yearsPro": "2",
                     "collegeName": "Villanova",
-                    "teamName": "Phoenix Suns"
+                    "teamName": "Phoenix Suns",
+                    "active": true
                 },
                 {
                     "personId": "1627826",
@@ -402,7 +424,7 @@
                     "yearsPro": "4",
                     "collegeName": "Mega Basket",
                     "teamName": "LA Clippers",
-                    "totalPoints": 44
+                    "active": true
                 }
             ]
         },
@@ -418,7 +440,7 @@
                     "yearsPro": "10",
                     "collegeName": "Fresno State",
                     "teamName": "LA Clippers",
-                    "totalPoints": 140
+                    "active": true
                 },
                 {
                     "personId": "1628378",
@@ -428,7 +450,8 @@
                     "pos": "G",
                     "yearsPro": "3",
                     "collegeName": "Louisville",
-                    "teamName": "Utah Jazz"
+                    "teamName": "Utah Jazz",
+                    "active": true
                 },
                 {
                     "personId": "203903",
@@ -438,7 +461,8 @@
                     "pos": "G",
                     "yearsPro": "6",
                     "collegeName": "Missouri",
-                    "teamName": "Utah Jazz"
+                    "teamName": "Utah Jazz",
+                    "active": true
                 },
                 {
                     "personId": "201572",
@@ -449,7 +473,7 @@
                     "yearsPro": "12",
                     "collegeName": "Stanford",
                     "teamName": "Milwaukee Bucks",
-                    "totalPoints": 108
+                    "active": true
                 },
                 {
                     "personId": "1626171",
@@ -460,7 +484,7 @@
                     "yearsPro": "5",
                     "collegeName": "Arkansas",
                     "teamName": "Milwaukee Bucks",
-                    "totalPoints": 52
+                    "active": true
                 },
                 {
                     "personId": "203991",
@@ -470,7 +494,8 @@
                     "pos": "C",
                     "yearsPro": "6",
                     "collegeName": "Elan Chalon",
-                    "teamName": "Atlanta Hawks"
+                    "teamName": "Atlanta Hawks",
+                    "active": true
                 }
             ]
         },
@@ -485,7 +510,8 @@
                     "pos": "F-C",
                     "yearsPro": "8",
                     "collegeName": "Kentucky",
-                    "teamName": "Los Angeles Lakers"
+                    "teamName": "Los Angeles Lakers",
+                    "active": true
                 },
                 {
                     "personId": "203114",
@@ -496,7 +522,7 @@
                     "yearsPro": "8",
                     "collegeName": "Texas A&M",
                     "teamName": "Milwaukee Bucks",
-                    "totalPoints": 164
+                    "active": true
                 },
                 {
                     "personId": "203944",
@@ -506,7 +532,8 @@
                     "pos": "F-C",
                     "yearsPro": "6",
                     "collegeName": "Kentucky",
-                    "teamName": "New York Knicks"
+                    "teamName": "New York Knicks",
+                    "active": true
                 },
                 {
                     "personId": "203992",
@@ -516,7 +543,8 @@
                     "pos": "G",
                     "yearsPro": "3",
                     "collegeName": "Fenerbahce",
-                    "teamName": "Atlanta Hawks"
+                    "teamName": "Atlanta Hawks",
+                    "active": true
                 },
                 {
                     "personId": "203083",
@@ -526,7 +554,8 @@
                     "pos": "C",
                     "yearsPro": "8",
                     "collegeName": "Connecticut",
-                    "teamName": "Los Angeles Lakers"
+                    "teamName": "Los Angeles Lakers",
+                    "active": true
                 },
                 {
                     "personId": "1629003",
@@ -536,7 +565,8 @@
                     "pos": "G-F",
                     "yearsPro": "2",
                     "collegeName": "Southern Methodist",
-                    "teamName": "Philadelphia 76ers"
+                    "teamName": "Philadelphia 76ers",
+                    "active": true
                 }
             ]
         },
@@ -552,7 +582,7 @@
                     "yearsPro": "3",
                     "collegeName": "Duke",
                     "teamName": "Boston Celtics",
-                    "totalPoints": 84
+                    "active": true
                 },
                 {
                     "personId": "202681",
@@ -563,7 +593,7 @@
                     "yearsPro": "9",
                     "collegeName": "Duke",
                     "teamName": "Brooklyn Nets",
-                    "totalPoints": 51
+                    "active": true
                 },
                 {
                     "personId": "203468",
@@ -573,7 +603,8 @@
                     "pos": "G",
                     "yearsPro": "7",
                     "collegeName": "Lehigh",
-                    "teamName": "Portland Trail Blazers"
+                    "teamName": "Portland Trail Blazers",
+                    "active": true
                 },
                 {
                     "personId": "204001",
@@ -584,7 +615,7 @@
                     "yearsPro": "4",
                     "collegeName": "Cajasol Sevilla",
                     "teamName": "Dallas Mavericks",
-                    "totalPoints": 80
+                    "active": true
                 },
                 {
                     "personId": "201933",
@@ -595,7 +626,7 @@
                     "yearsPro": "10",
                     "collegeName": "Oklahoma",
                     "teamName": "Brooklyn Nets",
-                    "totalPoints": 20
+                    "active": true
                 },
                 {
                     "personId": "203994",
@@ -605,7 +636,8 @@
                     "pos": "C",
                     "yearsPro": "6",
                     "collegeName": "Cedevita",
-                    "teamName": "Portland Trail Blazers"
+                    "teamName": "Portland Trail Blazers",
+                    "active": true
                 }
             ]
         },
@@ -620,7 +652,8 @@
                     "pos": "G-F",
                     "yearsPro": "3",
                     "collegeName": "Louisiana State",
-                    "teamName": "Philadelphia 76ers"
+                    "teamName": "Philadelphia 76ers",
+                    "active": true
                 },
                 {
                     "personId": "202699",
@@ -630,7 +663,8 @@
                     "pos": "F",
                     "yearsPro": "9",
                     "collegeName": "Tennessee",
-                    "teamName": "Philadelphia 76ers"
+                    "teamName": "Philadelphia 76ers",
+                    "active": true
                 },
                 {
                     "personId": "203471",
@@ -640,7 +674,8 @@
                     "pos": "G",
                     "yearsPro": "7",
                     "collegeName": "Braunschweig",
-                    "teamName": "Los Angeles Lakers"
+                    "teamName": "Los Angeles Lakers",
+                    "active": true
                 },
                 {
                     "personId": "1628978",
@@ -651,7 +686,7 @@
                     "yearsPro": "2",
                     "collegeName": "Villanova",
                     "teamName": "Milwaukee Bucks",
-                    "totalPoints": 76
+                    "active": true
                 },
                 {
                     "personId": "203925",
@@ -662,7 +697,7 @@
                     "yearsPro": "6",
                     "collegeName": "Virginia",
                     "teamName": "Brooklyn Nets",
-                    "totalPoints": 29
+                    "active": true
                 },
                 {
                     "personId": "201565",
@@ -672,7 +707,8 @@
                     "pos": "G",
                     "yearsPro": "11",
                     "collegeName": "Memphis",
-                    "teamName": "New York Knicks"
+                    "teamName": "New York Knicks",
+                    "active": true
                 }
             ]
         }

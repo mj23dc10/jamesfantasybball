@@ -2,72 +2,38 @@ const fs = require('fs')
 const moment = require('moment')
 const twitter = require('./twitter-service')
 const dataService = require('nba.js').data
-
+const GAME_KEY_PREFIX = 'game_'
 const getGameIdsByDate = async (date) => {
     let gameIds = []
-    dataService
-        .scoreboard({ date: date })
-        .then((res) => {
-            //await axios.get(nbaDataUrlPrefix + date + scoreboard)
-            const data = res
-            const numberOfGames = data.numGames
-            for (i = 0; i < numberOfGames; i++) {
-                gameIds.push(data.games[i].gameId)
-            }
-            console.log(gameIds)
-        })
-        .catch((err) => {
-            console.error(err)
-        })
+    const data = await dataService.scoreboard({ date: date }).catch((err) => {
+        console.error(err)
+    })
+    const numberOfGames = data.numGames
+    for (i = 0; i < numberOfGames; i++) {
+        gameIds.push(data.games[i].gameId)
+    }
+    console.log(date + ' Game Ids: ' + gameIds)
     return gameIds
 }
 
-const getPlayers = async (name) => {
+const getPlayers = async () => {
     let players = await dataService.players({ year: '2020' })
     return players.league.standard
 }
 
-const getPlayerPointsByDateAndPlayerId = async (date, id) => {
-    let gameIds = await getGameIdsByDate(date)
-    for (let gameId of gameIds) {
-        dataService
-            .boxscore({ date: date, gameId: gameId })
-            .then((res) => {
-                //await axios.get(nbaDataUrlPrefix + date + '/' + gameId + boxscoreSuffix)
-                const boxscoreData = res
-                const playStatArray = boxscoreData.stats.activePlayers
-                for (let playerStats of playStatArray) {
-                    if (playerStats.personId == id) {
-                        return playerStats.points
-                    }
-                }
-            })
-            .catch((err) => {
-                console.error(err)
-            })
-    }
-}
-const getPlayerStatsByDate = async (date) => {
+const _getPlayerStatsByDateAndGameIds = async (date, gameIds) => {
     const playerMap = new Map()
-    let gameIds = await getGameIdsByDate(date)
+    console.log('Processing Game Ids: ' + gameIds)
     for (let gameId of gameIds) {
-        dataService
-            .boxscore({ date: date, gameId: gameId })
-            .then((res) => {
-                //await axios.get(nbaDataUrlPrefix + date + '/' + gameId + boxscoreSuffix)
-                const boxscoreData = response.data
-                if (boxscoreData) {
-                    boxscoreData.stats.activePlayers.forEach((player) => {
-                        playerMap.set(
-                            player.personId,
-                            parseInt(player.points, 10) + parseInt(player.totReb, 10) + parseInt(player.assists, 10) + parseInt(player.steals, 10) + parseInt(player.blocks, 10)
-                        )
-                    })
-                }
+        const boxscoreData = await dataService.boxscore({ date: date, gameId: gameId }).catch((err) => {
+            console.error(err)
+        })
+        if (boxscoreData.stats) {
+            boxscoreData.stats.activePlayers.forEach((player) => {
+                playerMap.set(player.personId, parseInt(player.points, 10) + parseInt(player.totReb, 10) + parseInt(player.assists, 10) + parseInt(player.steals, 10) + parseInt(player.blocks, 10))
             })
-            .catch((err) => {
-                console.error(err)
-            })
+            playerMap.set(GAME_KEY_PREFIX + gameId, true)
+        }
     }
     return playerMap
 }
@@ -78,20 +44,25 @@ const getCurrentStandingsByDate = async (date, rosterFile, standingFile) => {
     //Check do we have standings up to this date
     const searchDate = moment(date, 'YYYYMMDD')
     const lastUpdate = moment(currentStandings.lastUpdated, 'YYYYMMDD')
-    if (searchDate.isAfter(lastUpdate)) {
-        let playerStats = await getPlayerStatsByDate(date)
-        //If we have sats for that day use them
+    if (searchDate.isSameOrAfter(lastUpdate)) {
+        let gameIds = await getGameIdsByDate(date)
+        let gamesToProcess = gameIds.filter((game) => !currentStandings.processedGames.includes(game))
+        let playerStats = await _getPlayerStatsByDateAndGameIds(date, gamesToProcess)
+        //If we have stass for that day and have not proccessed the game already use them
         if (playerStats.size > 0) {
             let teams = jamesLeague.teams
+            currentStandings.processedGames = currentStandings.processedGames.concat(
+                Array.from(playerStats.keys())
+                    .filter((key) => key.startsWith(GAME_KEY_PREFIX))
+                    .map((key) => key.replace(GAME_KEY_PREFIX, ''))
+            )
             teams.forEach((team) => {
                 let teamStanding = currentStandings.standings.find((o) => o.name === team.name)
                 var totalTeamPoints = 0
-                var gamesPlayed = 0
                 team.roster.forEach(async (player) => {
                     let points = playerStats.get(player.personId)
                     if (points) {
                         totalTeamPoints += points
-                        //gamesPlayed++;
                         if (player.totalPoints) {
                             player.totalPoints += points
                         } else {
@@ -187,7 +158,6 @@ updateRosterInfo()
 module.exports = {
     getCurrentStandingsByDate,
     getGameIdsByDate,
-    getPlayerPointsByDateAndPlayerId,
     getPlayers,
     tweetStandings,
 }

@@ -1,4 +1,140 @@
 {
-    "lastUpdated": "20210520",
-    "standings": []
+    "lastUpdated": "20210522",
+    "processedGames": [
+        "0042000121",
+        "0042000171",
+        "0042000111"
+    ],
+    "standings": [
+        {
+            "name": "Kevin P",
+            "points": 75,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 75
+                }
+            ],
+            "mvp": "Paul \"undefined\" George - 140",
+            "playersLeft": 0,
+            "standing": 1
+        },
+        {
+            "name": "Pat",
+            "points": 74,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 74
+                }
+            ],
+            "mvp": "James \"undefined\" Harden - 80",
+            "playersLeft": 0,
+            "standing": 2
+        },
+        {
+            "name": "Bill",
+            "points": 67,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 67
+                }
+            ],
+            "mvp": "LeBron \"undefined\" James - undefined",
+            "playersLeft": 0,
+            "standing": 3
+        },
+        {
+            "name": "Greg",
+            "points": 63,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 63
+                }
+            ],
+            "mvp": "Giannis \"undefined\" Antetokounmpo - 208",
+            "playersLeft": 0,
+            "standing": 4
+        },
+        {
+            "name": "Cameron",
+            "points": 63,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 63
+                }
+            ],
+            "mvp": "Jayson \"undefined\" Tatum - 84",
+            "playersLeft": 0,
+            "standing": 5
+        },
+        {
+            "name": "Kevin M",
+            "points": 59,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 59
+                }
+            ],
+            "mvp": "Joel \"undefined\" Embiid - undefined",
+            "playersLeft": 0,
+            "standing": 6
+        },
+        {
+            "name": "Darcy",
+            "points": 53,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 53
+                }
+            ],
+            "mvp": "Kevin \"undefined\" Durant - 87",
+            "playersLeft": 0,
+            "standing": 7
+        },
+        {
+            "name": "Shane",
+            "points": 51,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 51
+                }
+            ],
+            "mvp": "Kawhi \"undefined\" Leonard - 180",
+            "playersLeft": 0,
+            "standing": 8
+        },
+        {
+            "name": "Mike",
+            "points": 41,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 41
+                }
+            ],
+            "mvp": "Anthony \"undefined\" Davis - undefined",
+            "playersLeft": 0,
+            "standing": 9
+        },
+        {
+            "name": "Steve",
+            "points": 27,
+            "pointsHistory": [
+                {
+                    "date": "20210522",
+                    "points": 27
+                }
+            ],
+            "mvp": "Ben \"undefined\" Simmons - undefined",
+            "playersLeft": 0,
+            "standing": 10
+        }
+    ]
 }
